@@ -1,0 +1,146 @@
+.schedule img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  z-index: -1; 
+}
+
+.race-schedule {
+  position: relative;
+  width: 100%;
+  height: 345px;
+  overflow: hidden; 
+  margin: 15px 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.horizontal-accordion {
+  height: 315px;
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Ensures accordion items stay on the same line */
+}
+
+.choice {
+  width: 300px; /* Sets initial width of cards */
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+  margin: 0 10px; /* Adds spacing between cards */
+  transition: width 0.3s; /* Add transition effect for width change */
+}
+
+.card {
+  background-color: transparent; 
+  background-size: cover; /* Ensures the background image covers the entire card */
+  transition: background-color 0.3s ease; /* Adds transition effect to smoothly change the background color */
+  border-radius: 10px; 
+  border: none;
+}
+
+.choice .card-body {
+  max-width: 100%;
+  overflow: hidden; /* Hide overflow text */
+  max-height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: space-between; /* Align items with space between */
+  height: 100%; /* Ensure the card-body takes up the full height */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.sq-flag {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  width: 100px;
+  height: 50px;
+  padding: 0px;
+}
+
+.centered-flag {
+  max-width: 100%; /* Ensure the flag image doesn't exceed its container's width */
+  max-height: 100%; /* Ensure the flag image doesn't exceed its container's height */
+  border-radius: 5px;
+}
+
+.card-body img {
+  width: 35%; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  background-color: black;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.card-title img {
+  width: 45%; /* Set the width of the title image */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 3px;
+  border-radius: 5px;
+  /* background-color: black; */
+}
+
+.card-title,
+.card-text {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.card-h4 {
+  padding-top: 10px;
+  width: 100%;
+  height: 50%;
+  font-weight: 100;
+  font-family: 'Formula1-Regular', 'Formula1', sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.track-names {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.track-names img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.unset {
+  color: black !important;
+  background-color: #ddd !important;
+}
+
+.choice > .card-body {
+  height: calc(100% - 30px); /* Ensure card body fills the remaining height */
+}
+
+.choice.small {
+  width: 16%; /* Set the width of small cards */
+}
+
+.choice.expand {
+  width: 550px; /* Set the width of expanded cards */
+}
