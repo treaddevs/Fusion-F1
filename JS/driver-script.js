@@ -45,6 +45,8 @@ drivers.forEach(driver => {
     </div>
     <div class="bio-block">
       <h2>Biography</h2>
+    </div>
+    <div class="bio">
       <p class="driver-bio">${driver.bio}</p>
     </div>
   `;
