@@ -24,7 +24,6 @@ html {
     min-width: 300px; /* Minimum width to prevent squishing */
     margin-right: 20px; /* Space between columns */
     color: white;
-    /* border: 1px solid white; */
 }
 
 .stats-block {
@@ -35,7 +34,6 @@ html {
     flex: 1; /* Takes up one column on larger screens */
     min-width: 300px; /* Minimum width to prevent squishing */
     color: white;
-    /* border: 1px solid white; */
 }
 
 .stats-block p {
@@ -49,6 +47,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 15vh;
 }
 
 .value-block {
@@ -56,6 +55,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 15vh;
 }
 
 .bio-block {
@@ -113,8 +113,8 @@ html {
 .bio-block {
     font-family: 'Formula1';
     font-size: 1.25rem;
-    flex-basis: 100%; /* Takes full width on smaller screens */
-    margin-top: 20px; /* Space between blocks */
+    flex-basis: 100%; 
+    margin-top: 20px; 
     color: white;
 }
 
@@ -130,6 +130,7 @@ html {
 .bio {
     border: 1px solid white;
     border-radius: 12px;
+    margin-bottom: 10vh;
 }
 
 .bio p {

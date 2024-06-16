@@ -636,6 +636,39 @@
     
     <div id="driver-container"></div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Retrieve driver ID from query parameter
+            const params = new URLSearchParams(window.location.search);
+            const driverId = params.get('driverId');
+    
+            // Fetch driver data based on ID
+            const driver = await fetchDriverData(driverId);
+    
+            if (driver) {
+                displayDriver(driver);
+            } else {
+                console.error('Driver not found');
+            }
+        });
+    
+        async function fetchDriverData(driverId) {
+            // Simulate fetching driver data
+            return drivers.find(d => d.id === driverId);
+        }
+    
+        function displayDriver(driver) {
+            // Populate driver information on the page
+            const driverContainer = document.getElementById('driver-container');
+            const driverInfo = `
+                <h1>${driver.firstName} ${driver.lastName}</h1>
+                <p>Number: ${driver.number}</p>
+                <!-- Add more driver details here -->
+            `;
+            driverContainer.innerHTML = driverInfo;
+        }
+    </script>
+
     <script type="module" src="./JS/driver-script.js"></script>
     <script src="index.js" charset="utf-8"></script>
 </body>
