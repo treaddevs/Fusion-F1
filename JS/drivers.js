@@ -1,6 +1,6 @@
 import { drivers } from '../Data/F1_Data.js';
 
-const driverContainer = document.getElementById('driver-container');
+const driverContainer = document.getElementById('drivers-container');
 
 drivers.forEach(driver => {
   const driverPage = document.createElement('div');

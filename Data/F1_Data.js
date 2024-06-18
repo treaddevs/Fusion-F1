@@ -1,6 +1,6 @@
 export const drivers = [
   {
-    id: "1",
+    id: 1,
     firstName: "Alexander",
     lastName: "Albon",
     pic: "../Drivers/F1_Headshots_Background/Albon.avif",
@@ -20,7 +20,7 @@ export const drivers = [
     placeOfBirth: "London, England",
   },
   {
-    id: "2",
+    id: 2,
     firstName: "Fernando",
     lastName: "Alonso",
     pic: "../Drivers/F1_Headshots_Background/Alonso.avif",
@@ -40,7 +40,7 @@ export const drivers = [
     placeOfBirth: "Oviedo, Spain",
   },
   {
-    id: "3",
+    id: 3,
     firstName: "Valtteri",
     lastName: "Bottas",
     pic: "../Drivers/F1_Headshots_Background/Bottas.avif",
@@ -60,7 +60,7 @@ export const drivers = [
     placeOfBirth: "Nastola, Finland",
   },
   {
-    id: "4",
+    id: 4,
     firstName: "Pierre",
     lastName: "Gasly",
     pic: "../Drivers/F1_Headshots_Background/Gasly.avif",
@@ -80,7 +80,7 @@ export const drivers = [
     placeOfBirth: "Rouen, France",
   },
   {
-    id: "5",
+    id: 5,
     firstName: "Lewis",
     lastName: "Hamilton",
     pic: "../Drivers/F1_Headshots_Background/Hamilton.avif",
@@ -100,7 +100,7 @@ export const drivers = [
     placeOfBirth: "Stevenage, England",
   },
   {
-    id: "6",
+    id: 6,
     firstName: "Nico",
     lastName: "Hülkenberg",
     pic: "../Drivers/F1_Headshots_Background/Hulkenberg.avif",
@@ -120,7 +120,7 @@ export const drivers = [
     placeOfBirth: "Emmerich am Rhein, Germany",
   },
   {
-    id: "7",
+    id: 7,
     firstName: "Charles",
     lastName: "Leclerc",
     pic: "../Drivers/F1_Headshots_Background/Leclerc.avif",
@@ -140,7 +140,7 @@ export const drivers = [
     placeOfBirth: "Monte Carlo, Monaco",
   },
   {
-    id: "8",
+    id: 8,
     firstName: "Kevin",
     lastName: "Magnussen",
     pic: "../Drivers/F1_Headshots_Background/Magnussen.avif",
@@ -160,7 +160,7 @@ export const drivers = [
     placeOfBirth: "Roskilde, Denmark",
   },
   {
-    id: "9",
+    id: 9,
     firstName: "Lando",
     lastName: "Norris",
     pic: "../Drivers/F1_Headshots_Background/Norris.avif",
@@ -180,7 +180,7 @@ export const drivers = [
     placeOfBirth: "Bristol, England",
   },
   {
-    id: "10",
+    id: 10,
     firstName: "Esteban",
     lastName: "Ocon",
     pic: "../Drivers/F1_Headshots_Background/Ocon.avif",
@@ -200,7 +200,7 @@ export const drivers = [
     placeOfBirth: "Évreux, Normandy",
   },
   {
-    id: "11",
+    id: 11,
     firstName: "Sergio",
     lastName: "Pérez",
     pic: "../Drivers/F1_Headshots_Background/Perez.avif",
@@ -220,7 +220,7 @@ export const drivers = [
     placeOfBirth: "Guadalajara, Mexico",
   },
   {
-    id: "12",
+    id: 12,
     firstName: "Oscar",
     lastName: "Piastri",
     pic: "../Drivers/F1_Headshots_Background/Piastri.avif",
@@ -240,7 +240,7 @@ export const drivers = [
     placeOfBirth: "Melbourne, Victoria",
   },
   {
-    id: "13",
+    id: 13,
     firstName: "Daniel",
     lastName: "Ricciardo",
     pic: "../Drivers/F1_Headshots_Background/Ricciardo.avif",
@@ -260,7 +260,7 @@ export const drivers = [
     placeOfBirth: "Perth, Australia",
   },
   {
-    id: "14",
+    id: 14,
     firstName: "George",
     lastName: "Russell",
     pic: "../Drivers/F1_Headshots_Background/Russell.avif",
@@ -280,7 +280,7 @@ export const drivers = [
     placeOfBirth: "King's Lynn, England",
   },
   {
-    id: "15",
+    id: 15,
     firstName: "Carlos",
     lastName: "Sainz",
     pic: "../Drivers/F1_Headshots_Background/Sainz.avif",
@@ -300,7 +300,7 @@ export const drivers = [
     placeOfBirth: "Madrid, Spain",
   },
   {
-    id: "16",
+    id: 16,
     firstName: "Logan",
     lastName: "Sargeant",
     pic: "../Drivers/F1_Headshots_Background/Sargeant.avif",
@@ -320,7 +320,7 @@ export const drivers = [
     placeOfBirth: "Fort Lauderdale, Florida",
   },
   {
-    id: "17",
+    id: 17,
     firstName: "Lance",
     lastName: "Stroll",
     pic: "../Drivers/F1_Headshots_Background/Stroll.avif",
@@ -340,7 +340,7 @@ export const drivers = [
     placeOfBirth: "Montreal, Canada",
   },
   {
-    id: "18",
+    id: 18,
     firstName: "Yuki",
     lastName: "Tsunoda",
     pic: "../Drivers/F1_Headshots_Background/Tsunoda.avif",
@@ -360,7 +360,7 @@ export const drivers = [
     placeOfBirth: "Sagamihara, Japan",
   },
   {
-    id: "19",
+    id: 19,
     firstName: "Max",
     lastName: "Verstappen",
     pic: "../Drivers/F1_Headshots_Background/Verstappen.avif",
@@ -380,7 +380,7 @@ export const drivers = [
     placeOfBirth: "Hasselt, Belgium",
   },
   {
-    id: "20",
+    id: 20,
     firstName: "Guanyu",
     lastName: "Zhou",
     pic: "../Drivers/F1_Headshots_Background/Zhou.avif",
