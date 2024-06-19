@@ -635,7 +635,7 @@
 
     <div class="team-container">
         <div class="team-name">
-            <p>Team Name</p>   
+            Team Name   
         </div>
         <div class="team-page">
             <div class="drivers-info">
@@ -643,10 +643,13 @@
                     <div class="driver-pic" style="background-image: url('./Drivers/F1_Headshots_Background/Albon.avif')"></div>
                     <div class="number-flag">
                         <h2 class="driver-number">12</h2>   
-                        <div class="driver-flag" style="background-image: url(${driver.flag});"></div>
+                        <div class="driver-flag" style="background-image: url(./Flags/4x3/ae.svg);"></div>
                     </div>
                     <div class="driver-name">
                         <p class="name-text">Sam Treadwell</p>
+                    </div>
+                    <div class="team-name">
+                        <p>Team Name</p>   
                     </div>
                 </div>
                 <div class="right-driver">
@@ -658,34 +661,42 @@
                     <div class="driver-name">
                         <p class="name-text">Sam Treadwell</p>
                     </div>
+                    <div class="team-name">
+                        <p>Team Name</p>   
+                    </div>
                 </div>
             </div>
             <div class="teams-info">
-                <div class="key-block">
-                    <p>Full Team Name</p>
-                    <p>Base</p>
-                    <p>Team Chief</p>
-                    <p>Technical Chief</p>
-                    <p>Chassis</p>
-                    <p>Power Unit</p>
-                    <p>First Team Entry</p>
-                    <p>World Championships</p>
-                    <p>Highest Race Finish</p>
-                    <p>Pole Positions</p>
-                    <p>Fastest Laps</p>
+                <div class="logo-box">
+                    <img src="../Teams/Alpine/Alpine.avif">
                 </div>
-                <div class="value-block">
-                    <p>${teamData.teamName}</p>
-                    <p>${teamData.base}</p>
-                    <p>${teamData.chief}</p>
-                    <p>${teamData.techChief}</p>
-                    <p>${teamData.chasis}</p>
-                    <p>${teamData.powerUnit}</p>
-                    <p>${teamData.firstTeamEntry}</p>
-                    <p>${teamData.worldChampionships}</p>
-                    <p>${teamData.higestRaceFinish}</p>
-                    <p>${teamData.polePositions}</p>
-                    <p>${teamData.fastestLaps}</p>
+                <div class="data-block">
+                        <div class="key-block">
+                        <p>Full Team Name</p>
+                        <p>Base</p>
+                        <p>Team Chief</p>
+                        <p>Technical Chief</p>
+                        <p>Chassis</p>
+                        <p>Power Unit</p>
+                        <p>First Team Entry</p>
+                        <p>World Championships</p>
+                        <p>Highest Race Finish</p>
+                        <p>Pole Positions</p>
+                        <p>Fastest Laps</p>
+                    </div>
+                    <div class="value-block">
+                        <p>${teamData.teamName}</p>
+                        <p>${teamData.base}</p>
+                        <p>${teamData.chief}</p>
+                        <p>${teamData.techChief}</p>
+                        <p>${teamData.chasis}</p>
+                        <p>${teamData.powerUnit}</p>
+                        <p>${teamData.firstTeamEntry}</p>
+                        <p>${teamData.worldChampionships}</p>
+                        <p>${teamData.higestRaceFinish}</p>
+                        <p>${teamData.polePositions}</p>
+                        <p>${teamData.fastestLaps}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -695,7 +706,17 @@
         <div class="profile-desc">
             <p>${teamData.profile}</p>
         </div>
+        <div class="timeline">
+            <button class="btn btn-primary" id="toggleCollapse">
+                Toggle Collapse
+              </button>
+              <div id="collapseExample" class="collapse">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>              
+        </div>
     </div>
-    
+    <script type="module" src="./JS/tm-btns.js"></script>
 </body>
 </html>

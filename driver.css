@@ -17,6 +17,11 @@ html {
     margin-right: 150px;
 }
 
+.teams-info {
+    display: flex;
+    flex-direction: column;
+}
+
 .image-block {
     display: flex;
     flex-direction: column;
