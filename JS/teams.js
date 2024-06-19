@@ -1,80 +1,104 @@
+import { teamData } from '../Data/F1_Data';
 import { drivers } from '../Data/F1_Data';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const params = new URLSearchParams(window.location.search);
-    const driverId = params.get('id');
+    const teamId = params.get('id');
 
-    if (driverId) {
-        const driver = await fetchDriverData(driverId);
+    if (teamId) {
+        const driver = await fetchDriverData(teamId);
 
         if (driver) {
             displayDriver(driver);
         } else {
-            console.error('Driver not found');
+            console.error('Team not found');
         }
     } else {
-        console.error('Driver ID not provided');
+        console.error('Team ID not provided');
     }
 });
 
-async function fetchDriverData(driverId) {
+async function fetchDriverData(teamId) {
     // Simulate fetching driver data
-    return drivers.find(d => d.id === parseInt(driverId));
+    return teamData.find(d => d.id === parseInt(teamId));
 }
 
 function displayDriver(driver) {
-    const driverContainer = document.getElementById('driver-container');
+    const teamContainer = document.getElementById('team-container');
 
     // Clear any existing content
-    driverContainer.innerHTML = '';
+    teamContainer.innerHTML = '';
 
-    const driverPage = document.createElement('div');
-    driverPage.className = 'driver-page';
+    const teamPage = document.createElement('div');
+    teamPage.className = 'driver-page';
 
-    driverPage.innerHTML = `
-        <div class="image-block">
-            <div class="driver-pic" style="background-image: url(${driver.pic});"></div>
-            <div class="number-flag">
-                <h2 class="driver-number">${driver.number}</h2>   
-                <div class="driver-flag" style="background-image: url(${driver.flag});"></div>
+    teamPage.innerHTML = `
+    <div class="team-name">
+        ${teamData.team}   
+    </div>
+    <div class="team-page">
+        <div class="drivers-info">
+            <div class="left-driver">
+                <div class="driver-pic" style="background-image: url(${driver.pic})"></div>
+                <div class="number-flag">
+                    <h2 class="driver-number">${driver.number}</h2>   
+                    <div class="driver-flag" style="background-image: url(${driver.flag});"></div>
+                </div>
+                <div class="driver-name">
+                    <p class="name-text">${driver.firstName} ${driver.lastName}</p>
+                </div>
+                <div class="team-name">
+                    <p>${teamData.teamName}</p>   
+                </div>
             </div>
-            <div class="driver-name">
-                <p class="name-text">${driver.firstName} ${driver.lastName}</p>
-            </div>
-        </div>
-        <div class="stats-block">
-            <div class="key-block">
-                <p>Team</p>
-                <p>Country</p>
-                <p>Podiums</p>
-                <p>Points</p>
-                <p>Grands Prix Entered</p>
-                <p>World Championships</p>
-                <p>Highest Race Finish</p>
-                <p>Highest Grid Position</p>
-                <p>Date of Birth</p>
-                <p>Place of Birth</p>
-            </div>
-            <div class="value-block">
-                <p>${driver.team}</p>
-                <p>${driver.country}</p>
-                <p>${driver.podiums}</p>
-                <p>${driver.points}</p>
-                <p>${driver.grandPrixEntered}</p>
-                <p>${driver.worldChampionships}</p>
-                <p>${driver.highestRaceFinish}</p>
-                <p>${driver.highestGridPosition}</p>
-                <p>${driver.dateOfBirth}</p>
-                <p>${driver.placeOfBirth}</p>
+            <div class="right-driver">
+                <div class="driver-pic" style="background-image: url(${driver.pic})"></div>
+                <div class="number-flag">
+                    <h2 class="driver-number">${driver.number}</h2>   
+                    <div class="driver-flag" style="background-image: url(${driver.flag});"></div>
+                </div>
+                <div class="driver-name">
+                    <p class="name-text">${driver.firstName} ${driver.lastName}</p>
+                </div>
+                <div class="team-name">
+                    <p>${teamData.teamName}</p>   
+                </div>
             </div>
         </div>
-        <div class="bio-block">
-            <h2>Biography</h2>
+        <div class="teams-info">
+            <div class="logo-box">
+                <img src=url(${teamData.logo})>
+            </div>
+            <div class="data-block">
+                    <div class="key-block">
+                    <p>Full Team Name</p>
+                    <p>Base</p>
+                    <p>Team Chief</p>
+                    <p>Technical Chief</p>
+                    <p>Chassis</p>
+                    <p>Power Unit</p>
+                    <p>First Team Entry</p>
+                    <p>World Championships</p>
+                    <p>Highest Race Finish</p>
+                    <p>Pole Positions</p>
+                    <p>Fastest Laps</p>
+                </div>
+                <div class="value-block">
+                    <p>${teamData.teamName}</p>
+                    <p>${teamData.base}</p>
+                    <p>${teamData.chief}</p>
+                    <p>${teamData.techChief}</p>
+                    <p>${teamData.chasis}</p>
+                    <p>${teamData.powerUnit}</p>
+                    <p>${teamData.firstTeamEntry}</p>
+                    <p>${teamData.worldChampionships}</p>
+                    <p>${teamData.higestRaceFinish}</p>
+                    <p>${teamData.polePositions}</p>
+                    <p>${teamData.fastestLaps}</p>
+                </div>
+            </div>
         </div>
-        <div class="bio">
-            <p class="driver-bio">${driver.bio}</p>
-        </div>
-    `;
-
-    driverContainer.appendChild(driverPage);
+        `;
+        
+    teamContainer.appendChild(teamPage);
 }
