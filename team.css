@@ -1,0 +1,97 @@
+.team-name {
+    font-family: 'Formula1';
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.team-page {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.drivers-info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: 1px solid white;
+}
+
+.teams-info {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid yellow;
+}
+
+.key-block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aqua;
+}
+
+.key-block p {
+    font-family: 'Formula1';
+    font-size: 1rem;
+    color: white;
+}
+
+.value-block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aqua;
+}
+
+.value-block p {
+    font-family: 'Formula1';
+    font-size: 1rem;
+    color: white;
+}
+
+.profile h2 {
+    font-family: 'Formula1';
+    font-size: 1.5em;
+    color: white;
+}
+
+.profile-desc {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid palegreen;
+}
+
+.driver-name {
+    font-family: 'Formula1';
+    color: white;
+}
+
+.driver-number {
+    font-family: 'Formula1';
+    color: white;
+}
+
+.driver-pic {
+    height: 100%;
+    width: 100%;
+    height: auto;
+    width: auto;
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 2%;
+    aspect-ratio: 1/1;
+}
+
+.left-driver,
+.right-driver {
+    flex-basis: calc(50% - 5px); /* Set the initial size for each driver, accounting for margin */
+    margin-right: 10px; /* Add margin between drivers */
+}
