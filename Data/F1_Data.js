@@ -419,11 +419,13 @@ export const teamData = [
     polePositions: 20,
     fastestLaps: 15,
     profile: "Alpine may be a relatively new name to Formula 1, but Renault’s famous sportscar arm has plenty of motorsport heritage. The 2021 rebrand of the team marked the next step in Renault’s F1 revival, begun in 2016 with the takeover of the then-Lotus squad. Already race winners in their new guise, regular podiums and a tilt at the title must be their next target…",
-    year23: "Fall to a lonely sixth in the standings amid some major mid-season management changes. Esteban Ocon and Pierre Gasly prove closely matched, each scoring a podium, in Monaco and Zandvoort respectively.",
-    year22: "No podiums, but outperform arch rivals McLaren to rise to P4 in the final standings. Fernando Alonso, frustrated by reliability woes, departs at season's end for Aston Martin, to be replaced in 2023 by Pierre Gasly, forming all-French driver line-up with Esteban Ocon.",
-    year21: "A maiden F1 win for the Alpine name comes in Hungary courtesy of Esteban Ocon, aided by a staunch defence against a charging Lewis Hamilton from team mate Fernando Alonso, who also finishes on the podium in Qatar.",
-    year20: "Three podium finishes – the first since Renault’s works return – signal a significant step forward ahead of the team’s Alpine rebrand, and Fernando Alonso’s comeback, for 2021.",
-    year19: "Progress up the championship order is halted, ironically by new Renault customers McLaren, who demote them to fifth in the standings, despite Daniel Ricciardo securing their best result to date with P4 in Italy.",
+    years: [
+      [2023, "Fall to a lonely sixth in the standings amid some major mid-season management changes. Esteban Ocon and Pierre Gasly prove closely matched, each scoring a podium, in Monaco and Zandvoort respectively."],
+      [2022, "No podiums, but outperform arch rivals McLaren to rise to P4 in the final standings. Fernando Alonso, frustrated by reliability woes, departs at season's end for Aston Martin, to be replaced in 2023 by Pierre Gasly, forming all-French driver line-up with Esteban Ocon."],
+      [2021, "A maiden F1 win for the Alpine name comes in Hungary courtesy of Esteban Ocon, aided by a staunch defence against a charging Lewis Hamilton from team mate Fernando Alonso, who also finishes on the podium in Qatar."],
+      [2020, "Three podium finishes – the first since Renault’s works return – signal a significant step forward ahead of the team’s Alpine rebrand, and Fernando Alonso’s comeback, for 2021."],
+      [2019, "Progress up the championship order is halted, ironically by new Renault customers McLaren, who demote them to fifth in the standings, despite Daniel Ricciardo securing their best result to date with P4 in Italy."]
+    ]
   },
   {
     id: 2,
@@ -442,11 +444,13 @@ export const teamData = [
     polePositions: 1,
     fastestLaps: 2,
     profile: "Aston Martin’s original Formula 1 foray – over half a century ago – lasted just five races. This time, though, it’s serious. This F1 squad are no strangers to success, having won in their original guise of Jordan and most recently as Racing Point in 2020. Renowned for their ability to punch above their weight, and now with a two-time champion leading their driver line-up, Aston Martin are very much a team to watch…",
-    year23: "Hugely impressive start to season sees Fernando Alonso on the podium six times in first eight races. Fall back as campaign progresses, ending the year fifth overall in constructors’ championship.",
-    year22: "Low-key season sees team retain seventh in the standings, with P6 their best race finish – for Sebastian Vettel in Azerbaijan and Japan, and Lance Stroll in Singapore. Vettel announces his F1 retirement, with fellow champion Fernando Alonso swiftly signed as his 2023 replacement.",
-    year21: "Fail to keep pace with midfield rivals and drop to P7 in the standings, scoring less than half their 2020 points tally. Highlights are Sebastian Vettel’s podium in Azerbaijan plus fifth places at Spa and Monaco. Low point is his disqualification from P2 in Hungary for a fuel infringement.",
-    year20: "With the team firmly back on their feet, the Racing Point name scores a first race win en route to fourth in the standings courtesy of Sergio Perez, who is replaced by Sebastian Vettel for 2021 and the squad’s transformation to Aston Martin.",
-    year19: "The hangover from 2018’s turmoil takes its toll, and the team's recovery is a slow one, despite some gutsy drives from the ever-reliable Sergio Perez, who scores 52 of their 73 points, ensuring they retain seventh in the constructors' table.",
+    years: [
+      [2023, "Hugely impressive start to season sees Fernando Alonso on the podium six times in first eight races. Fall back as campaign progresses, ending the year fifth overall in constructors’ championship."],
+      [2022, "Low-key season sees team retain seventh in the standings, with P6 their best race finish – for Sebastian Vettel in Azerbaijan and Japan, and Lance Stroll in Singapore. Vettel announces his F1 retirement, with fellow champion Fernando Alonso swiftly signed as his 2023 replacement."],
+      [2021, "Fail to keep pace with midfield rivals and drop to P7 in the standings, scoring less than half their 2020 points tally. Highlights are Sebastian Vettel’s podium in Azerbaijan plus fifth places at Spa and Monaco. Low point is his disqualification from P2 in Hungary for a fuel infringement."],
+      [2020, "With the team firmly back on their feet, the Racing Point name scores a first race win en route to fourth in the standings courtesy of Sergio Perez, who is replaced by Sebastian Vettel for 2021 and the squad’s transformation to Aston Martin."],
+      [2019, "The hangover from 2018’s turmoil takes its toll, and the team's recovery is a slow one, despite some gutsy drives from the ever-reliable Sergio Perez, who scores 52 of their 73 points, ensuring they retain seventh in the constructors' table."]
+    ]
   },
   {
     id: 3,
@@ -465,11 +469,13 @@ export const teamData = [
     polePositions: 250,
     fastestLaps: 261,
     profile: "For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every season since the world championship began, the Prancing Horse has grown from the humble dream of founder Enzo Ferrari to become one of the most iconic and recognised brands in the world. Success came quickly through the likes of Alberto Ascari and John Surtees, and continued – in amongst leaner times – with Niki Lauda in the 1970s and then Michael Schumacher in the 2000s, when Ferrari claimed a then unprecedented five consecutive title doubles, securing their status as the most successful and decorated team in F1 history...",
-    year23: "Only team other than Red Bull to win a race – Carlos Sainz in Singapore – but an otherwise frustrating campaign of mixed fortunes sees team narrowly lose out to Mercedes for P2 in the constructors’ table, despite six pole positions and nine podiums.",
-    year22: "Head title race early season, with Charles Leclerc winning two of the three opening races. However, mix of driver error, reliability issues and strategy missteps ultimately consign them to distant runners-up spot behind Red Bull. Carlos Sainz scores first career win, at Silverstone.",
-    year21: "Still no sign of a title challenge, but strong year-on-year improvement lifts them clear of McLaren for P3 overall, with more than double their 2020 points tally. New arrival Carlos Sainz outscores Charles Leclerc, the Spaniard taking four podiums to his team mate’s one.",
-    year20: "Sink to their worst performance in four decades, failing to win a race, scoring just three podiums and falling to sixth in the standings. Sebastian Vettel is told early on that his contract will not be renewed for 2021, and it’s Charles Leclerc who secures 98 of the team’s 131 points.",
-    year19: "The pattern of recent years continues, as they fail to win a race until August’s Belgian GP, despite being clear pre-season favourites and often having the quickest car. A tense (and at times expensive) rivalry sees newcomer Charles Leclerc out-score veteran team mate Sebastian Vettel, with two victories to the four-time champion’s one.",
+    years: [
+      [2023, "Only team other than Red Bull to win a race – Carlos Sainz in Singapore – but an otherwise frustrating campaign of mixed fortunes sees team narrowly lose out to Mercedes for P2 in the constructors’ table, despite six pole positions and nine podiums."],
+      [2022, "Head title race early season, with Charles Leclerc winning two of the three opening races. However, mix of driver error, reliability issues and strategy missteps ultimately consign them to distant runners-up spot behind Red Bull. Carlos Sainz scores first career win, at Silverstone."],
+      [2021, "Still no sign of a title challenge, but strong year-on-year improvement lifts them clear of McLaren for P3 overall, with more than double their 2020 points tally. New arrival Carlos Sainz outscores Charles Leclerc, the Spaniard taking four podiums to his team mate’s one."],
+      [2020, "Sink to their worst performance in four decades, failing to win a race, scoring just three podiums and falling to sixth in the standings. Sebastian Vettel is told early on that his contract will not be renewed for 2021, and it’s Charles Leclerc who secures 98 of the team’s 131 points."],
+      [2019, "The pattern of recent years continues, as they fail to win a race until August’s Belgian GP, despite being clear pre-season favourites and often having the quickest car. A tense (and at times expensive) rivalry sees newcomer Charles Leclerc out-score veteran team mate Sebastian Vettel, with two victories to the four-time champion’s one."]
+    ] 
   },
   {
     id: 4,
@@ -488,11 +494,13 @@ export const teamData = [
     polePositions: 1,
     fastestLaps: 1,
     profile: "The youngest team on the grid, Haas made their highly impressive debut in 2016, and in the process became the first all-American-led F1 squad in three decades. Founded by industrialist Gene Haas, they are based in the United States on the same Kannapolis, North Carolina facility as his championship-winning NASCAR Sprint Cup Series team, Stewart-Haas Racing. The Ferrari-powered team also have a UK factory in Banbury…",
-    year23: "New and highly experienced driver line-up of Kevin Magnussen and Nico Hulkenberg cannot prevent slump to last in the standings, as VF-23 car struggles with tyre wear in race trim, despite several Q3 qualifying appearances.",
-    year22: "Return of former driver Kevin Magnussen brings a stunning P5 result at Bahrain season-opener and a maiden pole position at a rain-hit Interlagos in November. Score a much-improved 37 points in total, lifting them to P8 in the final standings.",
-    year21: "End the year without a point after opting to focus on 2022 car rather than in-season development of 2021 machine. Mick Schumacher dominates team mate Nikita Mazepin in all-new rookie driver line-up, with a best result of 12th place in Hungary.",
-    year20: "Unable to halt their downward spiral, drop to P9 overall in the table, scoring just three points in the final year of the team’s Grosjean-Magnussen era. Season ends in dramatic fashion, as Romain Grosjean miraculously walks away from fiery, high-speed crash in Bahrain.",
-    year19: "The Haas fairy tale finally hits a bump in the road, as they struggle to get a handle on their recalcitrant VF-19 machine. Fall to eighth in the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28 points between them."
+    years: [
+      [2023, "New and highly experienced driver line-up of Kevin Magnussen and Nico Hulkenberg cannot prevent slump to last in the standings, as VF-23 car struggles with tyre wear in race trim, despite several Q3 qualifying appearances."],
+      [2022, "Return of former driver Kevin Magnussen brings a stunning P5 result at Bahrain season-opener and a maiden pole position at a rain-hit Interlagos in November. Score a much-improved 37 points in total, lifting them to P8 in the final standings."],
+      [2021, "End the year without a point after opting to focus on 2022 car rather than in-season development of 2021 machine. Mick Schumacher dominates team mate Nikita Mazepin in all-new rookie driver line-up, with a best result of 12th place in Hungary."],
+      [2020, "Unable to halt their downward spiral, drop to P9 overall in the table, scoring just three points in the final year of the team’s Grosjean-Magnussen era. Season ends in dramatic fashion, as Romain Grosjean miraculously walks away from fiery, high-speed crash in Bahrain."],
+      [2019, "The Haas fairy tale finally hits a bump in the road, as they struggle to get a handle on their recalcitrant VF-19 machine. Fall to eighth in the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28 points between them."]
+    ]
   },
   {
     id: 5,
@@ -511,11 +519,13 @@ export const teamData = [
     polePositions: 1,
     fastestLaps: 7,
     profile: "Having enjoyed considerable success in world sportscars, where he helped nurture the emerging talents of future F1 stars Michael Schumacher and Heinz-Harald Frentzen, Peter Sauber guided his eponymous squad into F1 in 1993. The team has since established itself as a mainstay of the grid, becoming race winners under BMW’s brief ownership, and developing a well-earned reputation not only for producing competitive cars, but also for developing young drivers. In recent seasons they raced under the Alfa Romeo name - and in 2026 will become the works Audi squad - but for 2024 a new title sponsor brings a new identity to the famous Swiss team.",
-    year23: "Final season competing under the Alfa Romeo moniker is a disappointing one, as team drop to ninth overall in the constructors’ table. Best results are P8s for Valtteri Bottas in Bahrain and Qatar.",
-    year22: "Move up three places in the standings, with Valtteri Bottas relishing his team leader role and rookie Zhou Guanyu more than earning his place. Make the headlines late season with news that the team will become the Audi works squad from 2026.",
-    year21: "Fall to ninth in the table behind Williams, with 10 of their 13 points scored by former champion Kimi Raikkonen, who calls time on his F1 career at the end of the season. Prepare all-new line-up of ex-Mercedes racer Valtteri Bottas and Chinese newcomer Zhou Guanyu for 2022.",
-    year20: "Another season of infrequent highs – both cars scoring points at their home race of Imola, and both making Q3 in Turkey – again ends with P8 overall, Kimi Raikkonen and Antonio Giovinazzi amassing just eight points between them.",
-    year19: "Progress slows, as the C38 proves frustratingly inconsistent, even with the experienced Kimi Raikkonen at the wheel. Nevertheless retain P8 in the standings, 22 of their 57 points coming at the season’s eventful penultimate round in Brazil.",
+    years: [
+      [2023, "Final season competing under the Alfa Romeo moniker is a disappointing one, as team drop to ninth overall in the constructors’ table. Best results are P8s for Valtteri Bottas in Bahrain and Qatar."],
+      [2022, "Move up three places in the standings, with Valtteri Bottas relishing his team leader role and rookie Zhou Guanyu more than earning his place. Make the headlines late season with news that the team will become the Audi works squad from 2026."],
+      [2021, "Fall to ninth in the table behind Williams, with 10 of their 13 points scored by former champion Kimi Raikkonen, who calls time on his F1 career at the end of the season. Prepare all-new line-up of ex-Mercedes racer Valtteri Bottas and Chinese newcomer Zhou Guanyu for 2022."],
+      [2020, "Another season of infrequent highs – both cars scoring points at their home race of Imola, and both making Q3 in Turkey – again ends with P8 overall, Kimi Raikkonen and Antonio Giovinazzi amassing just eight points between them."],
+      [2019, "Progress slows, as the C38 proves frustratingly inconsistent, even with the experienced Kimi Raikkonen at the wheel. Nevertheless retain P8 in the standings, 22 of their 57 points coming at the season’s eventful penultimate round in Brazil."]
+    ]
   },
   {
     id: 6,
@@ -534,11 +544,13 @@ export const teamData = [
     polePositions: 157,
     fastestLaps: 166,
     profile: "Since entering the sport in 1966 under the guidance and restless endeavour of eponymous founder Bruce, McLaren's success has been nothing short of breathtaking. Five glittering decades have yielded countless victories, pole positions and podiums, not to mention eight constructors' championships. What's more, some of the sport's greatest drivers made their names with the team, including Emerson Fittipaldi, Ayrton Senna, Mika Hakkinen and Lewis Hamilton...", 
-    year23: "After a slow start, become regular podium contenders, with Lando Norris and impressive rookie team mate Oscar Piastri scoring nine rostrums between them. The result is a rise to fourth overall in the constructors’ championship.",
-    year22: "Drop to P5 in the standings behind Alpine, with Lando Norris scoring their sole podium at Imola – and 122 of their 159 points. Daniel Ricciardo fails to get to grips with the Mercedes-powered MCL36 and departs the team at the end of season.",
-    year21: "Record their first win since 2012, with Daniel Ricciardo and Lando Norris taking the year’s only one-two result by any team at Monza. Nevertheless, drop to fourth overall after coming off worse in season-long duel for P3 with Ferrari.",
-    year20: "Quick and consistent, beat their upper-midfield rivals to P3 in the standings as Ferrari falter, with Carlos Sainz and Lando Norris both scoring podium finishes. Agree deal to use Mercedes power from 2021",
-    year19: "With the Renault partnership starting to gel, and rookie star Lando Norris pushing the experienced Carlos Sainz hard, re-establish themselves as clear ‘best of the rest’ behind the big three teams. Third place in Brazil marks their first podium in five years.",
+    years: [
+      [2023, "After a slow start, become regular podium contenders, with Lando Norris and impressive rookie team mate Oscar Piastri scoring nine rostrums between them. The result is a rise to fourth overall in the constructors’ championship."],
+      [2022, "Drop to P5 in the standings behind Alpine, with Lando Norris scoring their sole podium at Imola – and 122 of their 159 points. Daniel Ricciardo fails to get to grips with the Mercedes-powered MCL36 and departs the team at the end of season."],
+      [2021, "Record their first win since 2012, with Daniel Ricciardo and Lando Norris taking the year’s only one-two result by any team at Monza. Nevertheless, drop to fourth overall after coming off worse in season-long duel for P3 with Ferrari."],
+      [2020, "Quick and consistent, beat their upper-midfield rivals to P3 in the standings as Ferrari falter, with Carlos Sainz and Lando Norris both scoring podium finishes. Agree deal to use Mercedes power from 2021"],
+      [2019, "With the Renault partnership starting to gel, and rookie star Lando Norris pushing the experienced Carlos Sainz hard, re-establish themselves as clear ‘best of the rest’ behind the big three teams. Third place in Brazil marks their first podium in five years."]
+    ]
   },
   {
     id: 7,
@@ -557,11 +569,13 @@ export const teamData = [
     polePositions: 130,
     fastestLaps: 99,
     profile: "Mercedes’ modern F1 revival started with the creation of a works squad for 2010 - the platform for a meteoric rise up the Grand Prix order. The team generated huge excitement from the off with the sensational return of Michael Schumacher, but headlines soon followed on track: three podiums in their debut season, all via Nico Rosberg - who then claimed a breakthrough pole/victory double at China in 2012. The following season he was paired with Lewis Hamilton, the duo going on to stage some epic title battles as the Silver Arrows swept all before them to become one of the most dominant forces of the modern F1 era – until Red Bull came and stole that crown. Nevertheless, with Hamilton now partnered by proven race-winner George Russell, Mercedes remain very much one of the teams to beat…",
-    year23: "Fail to win a Grand Prix for the first time since 2011, as W14 proves little better than its predecessor. Nevertheless, relentless development ultimately sees the team clinch second in the standings over Ferrari at the season’s final round.",
-    year22: "Radical rule changes shake up the order and Mercedes’ W13 lands wide of the mark, leaving them ‘best of the rest’ behind Red Bull and Ferrari. Newcomer George Russell takes their sole victory – and outscores Lewis Hamilton, who goes winless for the first time in his F1 career.",
-    year21: "Face the biggest challenge yet to their dominance of the turbo-hybrid. Lewis Hamilton loses his drivers’ crown to Red Bull’s Max Verstappen, despite winning eight races, as the team just about hang on to the constructors’ title, which they retain for an eighth successive season.",
-    year20: "Just when you think they can’t get any better, Mercedes – and in particular Lewis Hamilton – step it up another gear. The reigning champion wins 11 races and smashes records galore en route to a Schumacher-equalling seventh drivers' title, despite missing a round with Covid-19. Add two wins for Valtteri Bottas and it’s another dominant double crown for the Silver Arrows.",
-    year19: "Start the season with an unprecedented five one-two victories, and follow it up with a further 10 wins, thus securing their sixth title double on the bounce. All-round teamwork, rather than outright pace, is often the key to success. Valtteri Bottas ups his game, meaning Lewis Hamilton has to work hard to secure his sixth drivers’ crown, bringing the Brit tantalising close to matching Michael Schumacher’s all-time record.",
+    years: [
+      [2023, "Fail to win a Grand Prix for the first time since 2011, as W14 proves little better than its predecessor. Nevertheless, relentless development ultimately sees the team clinch second in the standings over Ferrari at the season’s final round." ],
+      [2022, "Radical rule changes shake up the order and Mercedes’ W13 lands wide of the mark, leaving them ‘best of the rest’ behind Red Bull and Ferrari. Newcomer George Russell takes their sole victory – and outscores Lewis Hamilton, who goes winless for the first time in his F1 career."],
+      [2021, "Face the biggest challenge yet to their dominance of the turbo-hybrid. Lewis Hamilton loses his drivers’ crown to Red Bull’s Max Verstappen, despite winning eight races, as the team just about hang on to the constructors’ title, which they retain for an eighth successive season."],
+      [2020, "Just when you think they can’t get any better, Mercedes – and in particular Lewis Hamilton – step it up another gear. The reigning champion wins 11 races and smashes records galore en route to a Schumacher-equalling seventh drivers' title, despite missing a round with Covid-19. Add two wins for Valtteri Bottas and it’s another dominant double crown for the Silver Arrows."],
+      [2019, "Start the season with an unprecedented five one-two victories, and follow it up with a further 10 wins, thus securing their sixth title double on the bounce. All-round teamwork, rather than outright pace, is often the key to success. Valtteri Bottas ups his game, meaning Lewis Hamilton has to work hard to secure his sixth drivers’ crown, bringing the Brit tantalising close to matching Michael Schumacher’s all-time record."]
+    ]
   },
   {
     id: 8,
@@ -580,11 +594,13 @@ export const teamData = [
     polePositions: 1,
     fastestLaps: 3,
     profile: "Established in 2006 as a squad in which young drivers from Red Bull’s prodigious talent pool could cut their F1 teeth, RB – originally named Toro Rosso and then AlphaTauri – were formed from the ashes of the plucky Minardi team. Sebastian Vettel gave validity to the approach almost immediately, delivering a fairy-tale win in 2008, before going on to enjoy world championship success with parent team Red Bull Racing. Today the ethos of nurturing talent still holds true, though the Italian squad are no longer simply a ‘B team’ but a constructor in their own right...",
-    year23: "Eventful final campaign under AlphaTauri moniker culminates with P8 in the standings. Newcomer Nyck de Vries dropped mid-season in favour of the experienced Daniel Ricciardo – who then misses five Grands Prix with a broken hand following a practice crash.",
-    year22: "Momentum stalls and lose ground to the likes of Alfa Romeo and Haas, dropping to P9 in the final standings, with just 35 points to 2021’s tally of 142. Pierre Gasly takes season’s best result with a fifth place in Baku, but departs the squad at the end of the year.",
-    year21: "Move up another place to sixth in the standings, as the ever-improving Pierre Gasly scores a podium in Azerbaijan and points in almost every race he finishes. Rookie team mate Yuki Tsunoda takes time to find his feet, but secures an excellent fourth in season finale.",
-    year20: "A new name brings new impetus and AlphaTauri emerge as a true midfield force, scoring more than a century of points, 27 of them on home soil at Monza, where Pierre Gasly secures his and the team’s maiden win.",
-    year19: "In their final season under the Toro Rosso name, enjoy their most successful campaign to date, scoring 85 points and securing sixth in the standings. Mid-season driver swap sees Pierre Gasly return from Red Bull Racing, the Frenchman responding to his ‘demotion’ with a spectacular maiden podium in Brazil.",
+    years: [
+      [2023, "Eventful final campaign under AlphaTauri moniker culminates with P8 in the standings. Newcomer Nyck de Vries dropped mid-season in favour of the experienced Daniel Ricciardo – who then misses five Grands Prix with a broken hand following a practice crash."],
+      [2022, "Momentum stalls and lose ground to the likes of Alfa Romeo and Haas, dropping to P9 in the final standings, with just 35 points to 2021’s tally of 142. Pierre Gasly takes season’s best result with a fifth place in Baku, but departs the squad at the end of the year."],
+      [2021, "Move up another place to sixth in the standings, as the ever-improving Pierre Gasly scores a podium in Azerbaijan and points in almost every race he finishes. Rookie team mate Yuki Tsunoda takes time to find his feet, but secures an excellent fourth in season finale."],
+      [2020, "A new name brings new impetus and AlphaTauri emerge as a true midfield force, scoring more than a century of points, 27 of them on home soil at Monza, where Pierre Gasly secures his and the team’s maiden win."],
+      [2019, "In their final season under the Toro Rosso name, enjoy their most successful campaign to date, scoring 85 points and securing sixth in the standings. Mid-season driver swap sees Pierre Gasly return from Red Bull Racing, the Frenchman responding to his ‘demotion’ with a spectacular maiden podium in Brazil."]
+    ]
   },
   {
     id: 9,
@@ -603,11 +619,13 @@ export const teamData = [
     polePositions: 103,
     fastestLaps: 97,
     profile: "Red Bull were no strangers to F1 - as sponsors - prior to formally entering as a works team in 2004. Nonetheless, the scale of their success over the following decade was staggering. After a first podium in 2006, the team hit their stride in 2009, claiming six victories and second in the constructors' standings. Over the next four seasons they were a tour de force, claiming consecutive title doubles between 2010 and 2013, with Sebastian Vettel emerging as the sport's youngest quadruple champion. Now they are recapturing that glory with an equally exciting talent – one named Max Verstappen…",
-    year23: "In the hands of Max Verstappen, the RB19 proves all but invincible, the team winning all but one race en route to a second consecutive championship double. Record-breaking campaign also results in their first-ever one-two finish in driver standings.",
-    year22: "After seeing off early Ferrari challenge, dominate to take first title double since 2013, with Max Verstappen securing a record 15 wins to retain drivers’ crown. Only cloud is a $7 million fine and a reduction in future wind-tunnel testing for exceeding the 2021 budget cap.",
-    year21: "Secure their first drivers’ championship since 2013, winning 11 of 22 races, and push Mercedes all the way in an intense – and, at times, bitter – constructors’ fight. New team mate Sergio Perez provides invaluable support to Max Verstappen’s successful title bid.",
-    year20: "A lonely second in the standings, consistently clear of the midfield but rarely able to match the pace of champions Mercedes. Max Verstappen stars – with two wins and another nine podiums – but Alex Albon is dropped for 2021 after just two top-three appearances.",
-    year19: "Transition from Renault to Honda power is remarkably smooth, and Max Verstappen’s four wins ensure an almost identical points tally to 2018. Drop Pierre Gasly mid-year in favour of rookie Alex Albon, and late-season progress raises hopes of a genuine title challenge in 2020.",
+    years: [
+      [2023, "In the hands of Max Verstappen, the RB19 proves all but invincible, the team winning all but one race en route to a second consecutive championship double. Record-breaking campaign also results in their first-ever one-two finish in driver standings."],
+      [2022, "After seeing off early Ferrari challenge, dominate to take first title double since 2013, with Max Verstappen securing a record 15 wins to retain drivers’ crown. Only cloud is a $7 million fine and a reduction in future wind-tunnel testing for exceeding the 2021 budget cap."],
+      [2021, "Secure their first drivers’ championship since 2013, winning 11 of 22 races, and push Mercedes all the way in an intense – and, at times, bitter – constructors’ fight. New team mate Sergio Perez provides invaluable support to Max Verstappen’s successful title bid."],
+      [2020, "A lonely second in the standings, consistently clear of the midfield but rarely able to match the pace of champions Mercedes. Max Verstappen stars – with two wins and another nine podiums – but Alex Albon is dropped for 2021 after just two top-three appearances."],
+      [2019, "Transition from Renault to Honda power is remarkably smooth, and Max Verstappen’s four wins ensure an almost identical points tally to 2018. Drop Pierre Gasly mid-year in favour of rookie Alex Albon, and late-season progress raises hopes of a genuine title challenge in 2020."]
+    ]
   },
   {
     id: 10,
@@ -626,11 +644,13 @@ export const teamData = [
     polePositions: 128,
     fastestLaps: 133,
     profile: "Driven on by the brilliance and passion of the late Sir Frank Williams, Williams grew from humble beginnings to become a Formula 1 behemoth, unrivalled by all except Ferrari and McLaren in terms of enduring success. Over the past four decades the team has racked up Grand Prix wins and championship glory, and in the process nurtured some of the greatest talents in the sport, both in and out the cockpit. And, following the Williams family's decision to step aside after the 2020 sale of the team to Dorilton Capital, a new era has begun...",
-    year23: "Rise to seventh overall under leadership of new team principal James Vowles. FW45 machine shows prodigious qualifying and straight-line speed, with best race result of seventh place for Alex Albon in Montreal and Monza.", 
-    year22: "Despite the FW44 showing promising pace at times – particularly in the hands of Alex Albon, who qualifies an outstanding ninth at Spa – score just eight points across the season, leaving the team 10th and last in the final standings.",
-    year21: "Experience something of a resurgence, scoring a podium in rain-curtailed Belgian Grand Prix courtesy of regular Q3 qualifying star George Russell. Improve to eighth overall in a campaign sadly marred by the death of founder Sir Frank Williams in November.",
-    year20: "End a season without a point for the first time in their history, but the team's future is assured as new owners take over from the Williams family, and closer technical ties to engine suppliers Mercedes are agreed for 2021 and beyond.",
-    year19: "A single point from 21 races heralds the worst campaign in the team’s history, despite the addition of former Grand Prix winner Robert Kubica. On the flip side, rookie George Russell marks himself out as a star of the future, out-qualifying his experienced team mate at every round.",
+    years: [
+      [2023, "Rise to seventh overall under leadership of new team principal James Vowles. FW45 machine shows prodigious qualifying and straight-line speed, with best race result of seventh place for Alex Albon in Montreal and Monza."], 
+      [2022, "Despite the FW44 showing promising pace at times – particularly in the hands of Alex Albon, who qualifies an outstanding ninth at Spa – score just eight points across the season, leaving the team 10th and last in the final standings."],
+      [2021, "Experience something of a resurgence, scoring a podium in rain-curtailed Belgian Grand Prix courtesy of regular Q3 qualifying star George Russell. Improve to eighth overall in a campaign sadly marred by the death of founder Sir Frank Williams in November."],
+      [2020, "End a season without a point for the first time in their history, but the team's future is assured as new owners take over from the Williams family, and closer technical ties to engine suppliers Mercedes are agreed for 2021 and beyond."],
+      [2019, "A single point from 21 races heralds the worst campaign in the team’s history, despite the addition of former Grand Prix winner Robert Kubica. On the flip side, rookie George Russell marks himself out as a star of the future, out-qualifying his experienced team mate at every round."]
+    ]
   },
 ]
 

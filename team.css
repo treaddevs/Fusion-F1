@@ -159,12 +159,10 @@
 .right-driver {
     position: relative;
     overflow: hidden;
-    flex-basis: calc(50% - 5px); /* Set the initial size for each driver, accounting for margin */
-    margin-right: 10px; /* Add margin between drivers */
+    flex-basis: calc(50% - 5px);
 }
 
 .logo-box {
-    /* position: relative; */
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -249,6 +247,61 @@
 
 .collapse.show {
     display: block;
+}
+
+.timeline {
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    font-family: 'Formula1';
+    /* scale: 1.75; */
+    padding: 10px;
+    background-color: #37BEDD; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #2B96B6; /* Darken the primary color on hover */
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+.card {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card-body {
+    color: white;
+    font-family: 'Montserrat';
+    text-align: justify;
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.85rem;
+    padding: 15px;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
