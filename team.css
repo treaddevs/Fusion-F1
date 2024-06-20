@@ -1,3 +1,23 @@
+.team-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 82vw;
+}
+
+.team-page {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: calc(100vw - 300px);
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
+
 .team-name {
     font-family: 'Formula1';
     font-weight: 500;
@@ -42,7 +62,7 @@
     margin: 0;
 }
 
-.team-page {
+.team-body {
     width: 82vw;
     display: flex;
     flex-direction: row;
@@ -55,13 +75,13 @@
     display: flex;
     flex-direction: row;
     flex: 1;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .teams-info {
     display: flex;
     flex-direction: column;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .key-block {
@@ -103,13 +123,8 @@
     font-family: 'Formula1';
     color: white;
     padding: 10px;
-    border: 1px solid palegreen;
-}
-
-.profile-desc {
     border: 1px solid white;
     border-radius: 12px;
-    margin-bottom: 10vh;
 }
 
 .profile-desc p {
@@ -155,6 +170,10 @@
     aspect-ratio: 1/1;
 }
 
+.left-driver {
+    margin-right:5px;;
+}
+
 .left-driver,
 .right-driver {
     position: relative;
@@ -179,7 +198,7 @@
 .left-driver,
 .right-driver {
     border: 1px solid white;
-    border-radius: 2%;
+    border-radius: 12px;
     background-color: black;
     transition: background-color 0.3s;
 }
@@ -217,47 +236,47 @@
     flex: 2;
 }
 
-/* #yearButtons {
-    width: 80vw;
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    justify-content: space-evenly;
-}
-
-.btn-primary {
-    font-family: 'Formula1';
-    scale: 1.75;
-    padding: 10px;
-    background-color: #37BEDD; 
-    color: white; 
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.btn-primary:hover {
-    background-color: darken(#37BEDD, 10%); 
-    border-color: darken(#37BEDD, 10%); 
-} */
-
-.collapse {
-    display: none;
-}
-
-.collapse.show {
-    display: block;
-}
-
 .timeline {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.timeline-text h2 {
+    font-family: 'Formula1';
+    font-size: 1.5em;
+    color: white;
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.year-button-container {
+    position: relative;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -265,24 +284,26 @@
 
 .btn-primary {
     font-family: 'Formula1';
-    /* scale: 1.75; */
+    font-size: 1rem;
     padding: 10px;
-    background-color: #37BEDD; 
     color: white; 
     border: none;
     border-radius: 5px;
-    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .btn-primary:hover {
-    background-color: #2B96B6; /* Darken the primary color on hover */
+    filter: brightness(0.75)
 }
 
-.collapse {
+.btn-collapse {
     display: none;
+    position: absolute;
+    left: 0;
+    width: 40vw;
 }
 
-.collapse.show {
+.btn-collapse.show {
     display: block;
 }
 

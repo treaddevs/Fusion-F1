@@ -1,15 +1,23 @@
 import { teamData } from "../Data/F1_Data.js";
 
+// Event delegation for toggle buttons
 document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('toggleCollapse');
-    const collapseDiv = document.getElementById('collapseExample');
-
-    toggleButton.addEventListener('click', function() {
-        if (collapseDiv.classList.contains('show')) {
-        collapseDiv.classList.remove('show');
-        } else {
-        collapseDiv.classList.add('show');
-        }
+    document.querySelectorAll('.toggleCollapse').forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const collapseDiv = document.getElementById(targetId);
+            
+            // Close other open collapse elements
+            const openCollapses = document.querySelectorAll('.btn-collapse.show');
+            openCollapses.forEach(collapse => {
+                if (collapse.id !== targetId) {
+                    collapse.classList.remove('show');
+                }
+            });
+            
+            // Toggle the clicked collapse element
+            collapseDiv.classList.toggle('show');
+        });
     });
 });
 
