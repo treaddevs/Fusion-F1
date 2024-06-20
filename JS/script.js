@@ -1,6 +1,5 @@
 //alert("Working!");
 
-
 // Video Text Overlay //
 function fadeOutText() {
     var svgText = document.querySelector('.video .highlights text tspan');
