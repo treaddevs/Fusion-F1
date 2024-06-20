@@ -22,7 +22,7 @@ async function displayTeams() {
         if (driver) {
             teamPage.innerHTML = `
                 <div class="team-name">
-                    ${team.teamName}   
+                    ${team.team}   
                 </div>
                 <div class="team-page">
                     <div class="drivers-info">
@@ -97,6 +97,22 @@ async function displayTeams() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="profile">
+                    <h2>Team Profile</h2>
+                </div>
+                <div class="profile-desc">
+                    <p>${teamData.profile}</p>
+                </div>
+                <div class="timeline">
+                    <button class="btn btn-primary" id="toggleCollapse">
+                        2023
+                    </button>
+                    <div id="collapseExample" class="collapse">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                    </div>              
                 </div>
             `;
 

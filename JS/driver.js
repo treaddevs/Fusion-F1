@@ -1,4 +1,4 @@
-import { drivers } from '../Data/F1_Data';
+import { drivers } from '../Data/F1_Data.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const params = new URLSearchParams(window.location.search);
