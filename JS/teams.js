@@ -67,7 +67,13 @@ async function displayTeams() {
                     <!-- Team information -->
                     <div class="teams-info">
                         <div class="logo-box">
-                            <img src="${team.logo}">
+                            <img src="${team.logo}" data-team="${team.name}">
+                        </div>
+                        <div class="logo-box">
+                            <img src="${team.logo}" data-team="Aston Martin">
+                        </div>
+                        <div class="logo-box">
+                            <img src="${team.logo}" data-team="RB">
                         </div>
                         <div class="data-block">
                             <div class="key-block">
@@ -100,13 +106,13 @@ async function displayTeams() {
                     </div>
                 </div>
                 <div class="profile">
-                    <h2>Team Profile</h2>
+                    <p>Team Profile</p>
                 </div>
                 <div class="profile-desc">
                     <p>${team.profile}</p>
                 </div>
                 <div class="timeline-text">
-                    <h2>Timeline</h2>
+                    <p>Timeline</p>
                 </div>
                 <div class="timeline">
                     <div class="button-container">
@@ -151,6 +157,21 @@ async function displayTeams() {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const teamLogos = document.querySelectorAll('.logo-box img');
+    
+    teamLogos.forEach(logo => {
+        const team = logo.dataset.team;
+        if (team === 'RB') {
+            const logoBox = logo.parentElement;
+            logoBox.classList.add('rb-background');
+        } else if (team === 'Aston Martin') {
+            const logoBox = logo.parentElement;
+            logoBox.classList.add('aston-martin-background');
+        }
+    });
+});
 
 async function fetchDriverData(teamId) {
     // Simulate fetching driver data
