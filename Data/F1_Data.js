@@ -429,7 +429,7 @@ export const teamData = [
   },
   {
     id: 2,
-    logo: "../Teams/AstonMartin/AstonMartin.avif",
+    logo: "../Teams/AstonMartin/AstonMartinLogo.png",
     team: "Aston Martin",
     teamName: "Aston Martin Aramco F1 Team",
     color: "#358C75",
@@ -579,7 +579,7 @@ export const teamData = [
   },
   {
     id: 8,
-    logo: "../Teams/RB/RB.avif",
+    logo: "../Teams/RB/RBLogo2.png",
     team: "RB",
     teamName: "Visa Cash App RB Formula One Team",
     color: "#5E8FAA",

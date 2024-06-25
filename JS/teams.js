@@ -28,7 +28,7 @@ async function displayTeams() {
                 <div class="team-body">
                     <div class="drivers-info">
                         <!-- Left driver -->
-                        <div class="left-driver">
+                        <div class="left-driver driver-link" onclick="window.location='/driver.html?id=${driver[0].id}'">
                             <!-- Driver picture -->
                             <div class="driver-pic" style="background-image: url(${driver[0].pic})"></div>
                             <!-- Driver number and flag -->
@@ -46,7 +46,7 @@ async function displayTeams() {
                             </div>
                         </div>
                         <!-- Right driver -->
-                        <div class="right-driver">
+                        <div class="right-driver driver-link" onclick="window.location='/driver.html?id=${driver[1].id}'">
                             <!-- Driver picture -->
                             <div class="driver-pic" style="background-image: url(${driver[1].pic})"></div>
                             <!-- Driver number and flag -->
@@ -66,14 +66,8 @@ async function displayTeams() {
                     </div>
                     <!-- Team information -->
                     <div class="teams-info">
-                        <div class="logo-box">
-                            <img src="${team.logo}" data-team="${team.name}">
-                        </div>
-                        <div class="logo-box">
-                            <img src="${team.logo}" data-team="Aston Martin">
-                        </div>
-                        <div class="logo-box">
-                            <img src="${team.logo}" data-team="RB">
+                        <div class="logo-box" data-team="${team.name}">
+                            <img src="${team.logo}" style="max-width: 100%; max-height: 100%; border-radius: 12px;" alt="Team Logo">
                         </div>
                         <div class="data-block">
                             <div class="key-block">
