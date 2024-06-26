@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future</title>
     <link rel="stylesheet" href="./future-styles.css"/>
+    <link rel="stylesheet" href="./nav-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -68,7 +69,7 @@
              <img src="Images/F1.jpeg" alt="Formula 1 logo with background pattern">
         </a>
        
-        <div>
+        <div class="nav-tabs">
             <div class="header-title">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg class="fusion-f1" width="241px" height="24px" viewBox="0 0 241 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -91,13 +92,15 @@
                                 <div class="nav-secondary drivers-menu">
                                     <div class="nav-contents">
                                         <div class="nav-header">
-                                            <a href="/en/drivers.html" data-locationinpage="secondary_navigation" data-pathtype="internal" class="f1-bold--s f1-color--white ">All Drivers <i class="fas fa-angle-right"></i><i class="icon icon-chevron-right f1-color--warmRed"></i></a>
-                                            <a href="/en/drivers/hall-of-fame.html" data-locationinpage="secondary_navigation" data-pathtype="internal" class="f1-bold--s f1-color--white ">Hall of Fame <i class="fas fa-angle-right"></i><i class="icon icon-chevron-right f1-color--warmRed"></i></a>
+                                            <!-- All Drivers -->
+                                            <a href="./drivers.html"  id="all-drivers-link" class="f1-bold--s f1-color--white">
+                                                All Drivers <i class="fas fa-angle-right"></i><i class="icon icon-chevron-right f1-color--warmRed"></i>
+                                            </a>
                                         </div>
                                         <div class="nav-list drivers">
                                             <ul class="column">
                                                 <li>
-                                                    <a href="/en/drivers/alexander-albon.html" class="driver" style="color:#37BEDD" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                    <a href="/driver.html?id=1" class="driver" style="color:#37BEDD" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                         <div class="driver-info">
                                                             <div class="name-wrapper">  
                                                                 <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -110,28 +113,26 @@
                                                                 <img src="Flags/088-thailand.svg" alt="Thailand Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/fernando-alonso.html" class="driver" style="color:#358C75" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Fernando</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Alonso</span>
+                                                    <a href="/driver.html?id=2" class="driver" style="color:#358C75" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Fernando</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Alonso</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">14</span>
+                                                                <img src="Flags/230-spain.svg" alt="Spain Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">14</span>
-                                                            <img src="Flags/230-spain.svg" alt="Spain Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/valtteri-bottas.html" class="driver" style="color:#00E701" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                    <a href="/driver.html?id=3" class="driver" style="color:#00E701" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                         <div class="driver-info">
                                                             <div class="name-wrapper"> 
                                                                 <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -144,302 +145,284 @@
                                                                 <img src="Flags/211-finland.svg" alt="Spain Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/pierre-gasly.html" class="driver" style="color:#2293D1" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Pierre</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Gasly</span>
+                                                    <a href="/driver.html?id=4" class="driver" style="color:#2293D1" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Pierre</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Gasly</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">10</span>
+                                                                <img src="Flags/197-france.svg" alt="France Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">10</span>
-                                                            <img src="Flags/197-france.svg" alt="France Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/lewis-hamilton.html" class="driver" style="color:#6CD3BF" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Lewis</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Hamilton</span>
+                                                    <a href="/driver.html?id=5" class="driver" style="color:#6CD3BF" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Lewis</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Hamilton</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">44</span>
+                                                                <img src="Flags/110-united kingdom.svg" alt="UK Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">44</span>
-                                                            <img src="Flags/110-united kingdom.svg" alt="UK Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                             </ul>
                                             <ul class="column">
                                                 <li>    
-                                                    <a href="/en/drivers/nico-hulkenberg.html" class="driver" style="color:#B6BABD" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Nico</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Hulkenberg</span>
+                                                    <a href="/driver.html?id=6" class="driver" style="color:#B6BABD" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Nico</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Hulkenberg</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">27</span>
+                                                                <img src="Flags/208-germany.svg" alt="Germany Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">27</span>
-                                                            <img src="Flags/208-germany.svg" alt="Germany Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/charles-leclerc.html" class="driver" style="color:#F91536" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Charles</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Leclerc</span>
+                                                    <a href="/driver.html?id=7" class="driver" style="color:#F91536" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Charles</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Leclerc</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">16</span>
+                                                                <img src="Flags/220-monaco.svg" alt="Monaco Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">16</span>
-                                                            <img src="Flags/220-monaco.svg" alt="Monaco Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/kevin-magnussen.html" class="driver" style="color:#B6BABD" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Kevin</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Magnussen</span>
+                                                    <a href="/driver.html?id=8" class="driver" style="color:#B6BABD" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Kevin</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Magnussen</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">20</span>
+                                                                <img src="Flags/191-denmark.svg" alt="Denmark Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">20</span>
-                                                            <img src="Flags/191-denmark.svg" alt="Denmark Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/lando-norris.html" class="driver" style="color:#F58020" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Lando</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Norris</span>
+                                                    <a href="/driver.html?id=9" class="driver" style="color:#F58020" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Lando</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Norris</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">4</span>
+                                                                <img src="Flags/110-united kingdom.svg" alt="UK Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">4</span>
-                                                            <img src="Flags/110-united kingdom.svg" alt="UK Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/esteban-ocon.html" class="driver" style="color:#2293D1" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Esteban</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Ocon</span>
+                                                    <a href="/driver.html?id=10" class="driver" style="color:#2293D1" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Esteban</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Ocon</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">31</span>
+                                                                <img src="Flags/197-france.svg" alt="France Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">31</span>
-                                                            <img src="Flags/197-france.svg" alt="France Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                             </ul>
                                             <ul class="column">
                                                 <li>    
-                                                    <a href="/en/drivers/sergio-perez.html" class="driver" style="color:#3671C6" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Sergio</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Perez</span>
+                                                    <a href="/driver.html?id=11" class="driver" style="color:#3671C6" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Sergio</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Perez</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">11</span>
+                                                                <img src="Flags/033-mexico.svg" alt="Mexico Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">11</span>
-                                                            <img src="Flags/033-mexico.svg" alt="Mexico Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/oscar-piastri.html" class="driver" style="color:#F58020" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Oscar</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Piastri</span>
+                                                    <a href="/driver.html?id=12" class="driver" style="color:#F58020" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Oscar</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Piastri</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">81</span>
+                                                                <img src="Flags/143-australia.svg" alt="Australia Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">81</span>
-                                                            <img src="Flags/143-australia.svg" alt="Australia Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/daniel-ricciardo.html" class="driver" style="color:#5E8FAA" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Daniel</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Ricciardo</span>
+                                                    <a href="/driver.html?id=13" class="driver" style="color:#5E8FAA" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Daniel</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Ricciardo</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">3</span>
+                                                                <img src="Flags/143-australia.svg" alt="Australia Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">3</span>
-                                                            <img src="Flags/143-australia.svg" alt="Australia Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/george-russell.html" class="driver" style="color:#6CD3BF" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">George</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Russell</span>
+                                                    <a href="/driver.html?id=14" class="driver" style="color:#6CD3BF" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">George</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Russell</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">63</span>
+                                                                <img src="Flags/110-united kingdom.svg" alt="UK Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">63</span>
-                                                            <img src="Flags/110-united kingdom.svg" alt="UK Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/carlos-sainz.html" class="driver" style="color:#F91536" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Carlos</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Sainz</span>
+                                                    <a href="/driver.html?id=15" class="driver" style="color:#F91536" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Carlos</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Sainz</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">55</span>
+                                                                <img src="Flags/230-spain.svg" alt="Spain Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">55</span>
-                                                            <img src="Flags/230-spain.svg" alt="Spain Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                             </ul>
                                             <ul class="column">
                                                 <li>    
-                                                    <a href="/en/drivers/logan-sargeant.html" class="driver" style="color:#37BEDD" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Logan</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Sargeant</span>
+                                                    <a href="/driver.html?id=16" class="driver" style="color:#37BEDD" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Logan</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Sargeant</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">2</span>
+                                                                <img src="Flags/186-united states.svg" alt="US Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">2</span>
-                                                            <img src="Flags/186-united states.svg" alt="US Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/lance-stroll.html" class="driver" style="color:#358C75" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Lance</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Stroll</span>
+                                                    <a href="/driver.html?id=17" class="driver" style="color:#358C75" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Lance</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Stroll</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">18</span>
+                                                                <img src="Flags/066-canada.svg" alt="Canada Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">18</span>
-                                                            <img src="Flags/066-canada.svg" alt="Canada Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/yuki-tsunoda.html" class="driver" style="color:#5E8FAA" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Yuki</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Tsunoda</span>
+                                                    <a href="/driver.html?id=18" class="driver" style="color:#5E8FAA" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Yuki</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Tsunoda</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">22</span>
+                                                                <img src="Flags/241-japan.svg" alt="Japan Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">22</span>
-                                                            <img src="Flags/241-japan.svg" alt="Japan Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/max-verstappen.html" class="driver" style="color:#3671C6" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Max</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Verstappen</span>
+                                                    <a href="/driver.html?id=19" class="driver" style="color:#3671C6" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Max</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Verstappen</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">1</span>
+                                                                <img src="Flags/077-netherlands.svg" alt="Netherlands Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">1</span>
-                                                            <img src="Flags/077-netherlands.svg" alt="Netherlands Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                                 <li>    
-                                                    <a href="/en/drivers/guanyu-zhou.html" class="driver" style="color:#00E701" data-locationinpage="secondary_navigation" data-pathtype="internal">
-                                                    <div class="driver-info">
-                                                        <div class="name-wrapper"> 
-                                                            <div class="name f1--xxs f1-color--white followed f1-capitalize">
-                                                                <span class="firstname">Guanyu</span>
-                                                                <span class="lastname f1-bold--xxs f1-uppercase">Zhou</span>
+                                                    <a href="/driver.html?id=20" class="driver" style="color:#00E701" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                        <div class="driver-info">
+                                                            <div class="name-wrapper"> 
+                                                                <div class="name f1--xxs f1-color--white followed f1-capitalize">
+                                                                    <span class="firstname">Guanyu</span>
+                                                                    <span class="lastname f1-bold--xxs f1-uppercase">Zhou</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="number">24</span>
+                                                                <img src="Flags/011-china.svg" alt="China Flag" class="flag">
                                                             </div>
                                                         </div>
-                                                        <div class="info">
-                                                            <span class="number">24</span>
-                                                            <img src="Flags/011-china.svg" alt="China Flag" class="flag">
-                                                        </div>
-                                                    </div>
-                                                    <i class="icon icon-chevron-right f1-color--white icon-chevron--position"></i>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -450,12 +433,12 @@
                             <div class="nav-secondary teams-menu">
                                 <div class="nav-contents">
                                     <div class="nav-header">
-                                        <a href="/en/drivers.html" data-locationinpage="secondary_navigation" data-pathtype="internal" class="f1-bold--s f1-color--white ">All Teams <i class="fas fa-angle-right"></i><i class="icon icon-chevron-right f1-color--warmRed"></i></a>
+                                        <a href="/teams.html" data-locationinpage="secondary_navigation" data-pathtype="internal" class="f1-bold--s f1-color--white ">All Teams <i class="fas fa-angle-right"></i><i class="icon icon-chevron-right f1-color--warmRed"></i></a>
                                     </div>
                                     <div class="nav-list teams">
                                         <ul class="column">
                                             <li>
-                                                <a href="/en/teams/Alpine.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=1" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -471,7 +454,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/en/teams/AstonMartin.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=2" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -487,7 +470,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/en/teams/Ferrari.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=3" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -505,7 +488,7 @@
                                         </ul>
                                         <ul class="column">
                                             <li>
-                                                <a href="/en/teams/Haas.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=4" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -521,7 +504,7 @@
                                                 </a>
                                             </li>   
                                             <li>
-                                                <a href="/en/teams/KickSauber.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=5" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -537,7 +520,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/en/teams/McLaren.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=6" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -555,7 +538,7 @@
                                         </ul>
                                         <ul class="column">
                                             <li>
-                                                <a href="/en/teams/Mercedes.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=7" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -571,7 +554,7 @@
                                                 </a>
                                             </li>   
                                             <li>
-                                                <a href="/en/teams/RB.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=8" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -587,7 +570,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/en/teams/RedBull.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=9" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -605,7 +588,7 @@
                                         </ul>
                                         <ul class="column">
                                             <li>
-                                                <a href="/en/teams/Williams.html" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
+                                                <a href="/team.html?id=10" class="team" style="color:white" data-locationinpage="secondary_navigation" data-pathtype="internal">
                                                     <div class="team-info">
                                                         <div class="teamname-wrapper">  
                                                             <div class="name f1--xxs f1-color--white followed f1-capitalize">
@@ -625,6 +608,7 @@
                                 </div>
                             </div>
                             <a class="nav-link" href="future.html" style="color: white;">Future</a>
+                            <a class="nav-link" href="about.html" style="color: white;">About</a>
                         </div>
                     </div>
                 </div>

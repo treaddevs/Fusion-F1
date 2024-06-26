@@ -1,5 +1,4 @@
-import { teamData } from '../Data/F1_Data.js';
-import { drivers } from '../Data/F1_Data.js';
+import { teamData, drivers } from '../Data/F1_Data.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     displayTeams();
