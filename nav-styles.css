@@ -1,11 +1,3 @@
-/* html {
-    width: 100%;
-    height: 100%;
-    background: black;
-    position: absolute;
-    margin: 0;
-} */
-
 body {
     font-family: 'Formula1-Display-Wide', sans-serif !important;
     display: flex;

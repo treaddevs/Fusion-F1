@@ -1,0 +1,397 @@
+* {
+    text-decoration: none;
+}
+
+.driver-rankings img {
+    position: relative;
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto;
+    height: auto; 
+}
+
+.driver-standings img {
+    position: absolute; 
+    width: 100vw;
+    top: 0; 
+    left: 0; 
+}
+
+.background-img img {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.driver-standings p {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Formula1-Display-Wide', sans-serif;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.podium {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Adjust as needed */
+    max-width: 1030px; /* Maximum width */
+    max-height: 289px; /* Maximum height */
+}
+
+.podium-left, .podium-right {
+    margin-top: 28px;
+    width: 314px; 
+    height: 120px; 
+    display: flex;
+    justify-content: center; 
+    border-top-left-radius: 10px; /* Rounded corners for top left */
+    border-top-right-radius: 10px; /* Rounded corners for top right */
+}
+
+.podium-center {
+    width: 362px; 
+    height: 150px; 
+    display: flex; 
+    justify-content: center; 
+    border-top-left-radius: 10px; /* Rounded corners for top left */
+    border-top-right-radius: 10px; /* Rounded corners for top right */
+}
+
+.podium-left .team-border {
+    bottom: 0;
+    height: 10px;
+    left: 0; 
+    position: absolute;
+    width: 314px;
+}
+
+.podium-right .team-border {
+    bottom: 0;
+    height: 10px;
+    right: 0; 
+    position: absolute;
+    width: 314px;
+}
+
+.podium-center .team-border {
+    bottom: 0;
+    height: 10px;
+    left: 50%; 
+    position: absolute;
+    transform: translateX(-50%); 
+    width: 362px; 
+}
+
+.podium-left .team-border .footer,
+.podium-right .team-border .footer {
+    top: 0;
+    margin-top: 10px;
+    bottom: 0;
+    height: 100px;
+    left: 0; 
+    position: absolute;
+    width: 314px;
+    z-index: 1;
+}
+
+.podium-center .team-border .footer {
+    top: 0;
+    margin-top: 10px;
+    bottom: 0;
+    height: 100px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%); 
+    width: 362px; 
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+
+.driver-name {
+    position: absolute; 
+    top: 30px; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+}
+
+.footer .firstname-left,
+.footer .firstname-right,
+.footer .firstname-center
+{
+    font-family: 'Formula1-Display-Regular', sans-serif;
+    top: 30px;
+    margin: 0;
+    padding: 18px;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.footer .lastname-left,
+.footer .lastname-right,
+.footer .lastname-center {
+    font-family: 'Formula1-Display-Bold', sans-serif;
+    top: 0;
+    margin: 0;
+    font-size: 28px;
+    background-color: transparent;
+}
+
+.podium-left {
+    background-image: url("../Rankings/Rankings 2.jpg");
+    background-size: cover;
+}
+
+.podium-center {
+    background-image: url("../Rankings/Rankings 1.jpg");
+    background-size: cover;
+}
+
+.podium-right {
+    background-image: url("../Rankings/Rankings 3.jpg");
+    background-size: cover;
+}
+
+.driver-image {
+    z-index: 1;
+}
+
+.driver-left,
+.driver-center,
+.driver-right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.driver-left img,
+.driver-center img,
+.driver-right img {
+    align-self: flex-end; /* Position the driver image at the bottom */
+}
+
+.podium-left .driver-left {
+    position: absolute;
+    bottom: 0;
+    width: 314px;
+    height: 250px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.podium-right .driver-right {
+    position: absolute;
+    bottom: 0;
+    width: 314px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.podium-center .driver-center {
+    position: absolute;
+    bottom: 0;
+    width: 362px;
+    height: 288px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.icon-chevron-right.f1-color--warmRed,
+.fas.fa-angle-right {
+    color: #ff3333; 
+    margin-left: 10px;
+}
+
+.list-group-item {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: black; /* Default text color */
+    background-color: white; /* Default background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition animation */
+}
+
+.list-group-item:hover,
+.list-group-item:focus {
+    background-color: #212529; /* Background color on hover */
+    color: white !important; /* Text color on hover */
+}
+
+.list-group-item:hover .icon-chevron-right.f1-color--warmRed,
+.list-group-item.active .icon-chevron-right.f1-color--warmRed,
+.list-group-item:hover .fas.fa-angle-right,
+.list-group-item.active .fas.fa-angle-right {
+    color: #ffffff !important;
+}
+
+.driver-rankings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item.active {
+    justify-content: space-between;
+}
+
+.rankings-name {
+    display: flex;
+    align-items: center;
+}
+
+.points-container {
+    margin-left: auto; 
+}
+
+.points {
+    font-family: 'Formula1';
+    font-size: 16px;
+    background-color: #dbdbdb;
+    padding: 5px;
+    border-radius: 15px;
+    margin-right: 5px; 
+    color: black;
+}
+
+.icon {
+    margin-left: 10px; 
+}
+
+.list-group {
+    width: 1030px;
+}
+
+.list-group-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px; 
+    margin-bottom: 5px; 
+}
+
+#myList {
+    position: absolute;
+    top: 115%;
+    left: 50%; /* Position from the horizontal center */
+    width: 80%; /* 80% of the viewport width */
+    max-height: 400px;
+    overflow-y: auto;
+    transform: translate(-50%, -100%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rankings-name {
+    display: inline-block;
+}
+
+.rankings-first-name {
+    font-family: 'Formula1', sans-serif;
+}
+
+.rankings-last-name {
+    font-family: 'Formula1-Display-Bold';
+    margin-right: 5px;
+}
+
+.team,
+.rank {
+    font-family: sans-serif;
+}
+
+.team-color-icon {
+    width: 6px;
+    height: 12px; 
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.rankings-name {
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    align-items: center;
+}
+
+.red-bull {
+    background-color: #3671C6;
+}
+
+.ferrari {
+    background-color: #E80020;
+}
+
+.mclaren {
+    background-color: #FF8000;
+}
+
+.mercedes {
+    background-color: #27F4D2;
+}
+
+.aston-martin {
+    background-color: #229971;
+}
+
+.alpine {
+    background-color: #0093CC;
+}
+
+.kick-sauber {
+    background-color: #52e252;
+}
+
+.haas {
+    background-color: #B6BABD;
+}
+
+.rb {
+    background-color: #6692FF;
+}
+
+.williams {
+    background-color: #64C4FF;
+}
