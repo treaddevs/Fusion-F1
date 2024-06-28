@@ -151,21 +151,6 @@ async function displayTeams() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const teamLogos = document.querySelectorAll('.logo-box img');
-    
-    teamLogos.forEach(logo => {
-        const team = logo.dataset.team;
-        if (team === 'RB') {
-            const logoBox = logo.parentElement;
-            logoBox.classList.add('rb-background');
-        } else if (team === 'Aston Martin') {
-            const logoBox = logo.parentElement;
-            logoBox.classList.add('aston-martin-background');
-        }
-    });
-});
-
 async function fetchDriverData(teamId) {
     // Simulate fetching driver data
     return drivers.filter(d => d.team === teamData.find(t => t.id === teamId).team);
