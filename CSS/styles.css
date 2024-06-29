@@ -652,6 +652,14 @@ a.video-text {
     border-radius: 15px;
 }
 
+.body-footer {
+    width: 100vw;
+}
+
+.body-footer img {
+    width: 100%;
+}
+
 /* Media query for wider screens */
 @media screen and (min-width: 1200px) {
     .articles-container {

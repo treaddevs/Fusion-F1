@@ -10,9 +10,9 @@
 .page-pattern::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 35px;
     bottom: 0;
-    left: 185px;
+    left: 200px;
     width: 100%; 
     background-image: url(./Images/Pattern-bar.jpg); 
     background-repeat: repeat-y; 
@@ -53,6 +53,30 @@
     font-size: 0.85rem;
     color: rgb(48, 48, 48);
     padding: 15px 5px 5px 5px;
+    margin: 0;
+}
+
+.contributor {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Formula1';
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: rgb(63, 63, 63);
+    width: 70vw;
+    border-radius: 10px;
+}
+
+.special {
+    color: white;
+    padding: 5px 5px 2.5px 5px;
+    margin: 0;
+}
+
+.author {
+    color: red;
+    font-weight: 500;
+    padding: 2.5px 5px 5px 5px;
     margin: 0;
 }
 
@@ -100,7 +124,8 @@
     display: flex;
     border-top: 8px solid rgb(225, 6, 0);
     border-right: 8px solid rgb(225, 6, 0);
-    border-top-right-radius: 20px;
+    border-top-right-radius: 31px;
+    margin-top: 20px;
     height: 80%;
     width: 80%;
 }
@@ -129,12 +154,65 @@
     padding: 0;
 }
 
+.third-img {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.third-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.fourth-img {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.textblock-1 h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.textblock-2 h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.textblock-3 h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.textblock-4 h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.fourth-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
 .textblock-1 {
     display: flex;
     flex-direction: column;
     flex: 1;
     font-family: 'Montserrat';
     width: 70vw;
+    margin: 15px;
 }
 
 .textblock-2 {
@@ -143,6 +221,7 @@
     flex: 1;
     font-family: 'Montserrat';
     width: 70vw;
+    margin: 15px;
 }
 
 .textblock-3 {
@@ -151,9 +230,19 @@
     flex: 1;
     font-family: 'Montserrat';
     width: 70vw;
+    margin: 15px;
 }
 
-.textblock-1 p, .textblock-2 p, .textblock-3 p {
+.textblock-4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Montserrat';
+    width: 70vw;
+    margin: 15px;
+}
+
+.textblock-1 p, .textblock-2 p, .textblock-3 p, .textblock-4 p {
     margin: 0;
     padding: 12px;
 }
@@ -177,4 +266,21 @@
     flex-direction: column;
     align-items: flex-start;
     width: 70vw;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 68vw;
+}
+
+.day-2 h2 {
+    font-family: 'Formula1';
+    font-weight: 400;
+}
+
+.day-2 img {
+    border-radius: 12px;
+    border: 2px solid rgb(70, 70, 70);
 }

@@ -303,9 +303,9 @@
 
 #myList {
     position: absolute;
-    bottom: 20px;
-    left: 50%; /* Position from the horizontal center */
-    width: 80%; /* 80% of the viewport width */
+    bottom: 16%;
+    left: 50%; 
+    width: 80%; 
     max-height: 400px;
     overflow-y: auto;
     transform: translate(-50%, -100%);
