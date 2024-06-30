@@ -627,28 +627,10 @@ a.video-text {
     margin-bottom: 15px;
 }
 
-.schedule img {
-    max-width: 100%;
-    width: 100vw; 
-    height: auto; 
-    border-radius: 15px;
-}
-
 .standings img {
     max-width: 100%; 
     width: 100vw; 
     height: auto; 
-    border-radius: 15px;
-}
-
-.race-schedule {
-    position: relative;
-    width: 100%; 
-    height: 400px; 
-    background: url('./Images/pexels-mahdi-bafande-15629018.jpg') no-repeat center center;
-    background-size: cover;
-    margin-left: 20px;
-    margin-right: 20px;
     border-radius: 15px;
 }
 
@@ -660,7 +642,6 @@ a.video-text {
     width: 100%;
 }
 
-/* Media query for wider screens */
 @media screen and (min-width: 1200px) {
     .articles-container {
         width: 100%;

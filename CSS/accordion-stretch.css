@@ -1,3 +1,4 @@
+/* Ensures the image fits within the container */
 .schedule img {
   max-width: 100%;
   width: auto;
@@ -12,24 +13,30 @@
   z-index: -1; 
 }
 
+/* Sets a fixed height and handles overflow */
 .race-schedule {
   position: relative;
   width: 100%;
-  height: 345px;
+  height: 372px;
   overflow: hidden; 
   margin: 15px 0; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  padding: 35px 20px 35px 20px;
 }
 
+/* Sets a fixed height and handles overflow */
 .horizontal-accordion {
-  height: 315px;
+  height: 372px;
   display: flex;
   overflow-x: auto; /* Enables horizontal scrolling */
+  overflow-y: hidden; /* Hides vertical overflow */
   white-space: nowrap; /* Ensures accordion items stay on the same line */
 }
+ 
 
+/* Adjusts width and margin for the card */
 .choice {
   width: 300px; /* Sets initial width of cards */
   flex: 0 0 auto; /* Prevent cards from shrinking */
@@ -37,31 +44,29 @@
   transition: width 0.3s; /* Add transition effect for width change */
 }
 
+/* Ensures background image covers the entire card and smooth background color change */
 .card {
   background-color: transparent; 
   background-size: cover; /* Ensures the background image covers the entire card */
   transition: background-color 0.3s ease; /* Adds transition effect to smoothly change the background color */
   border-radius: 10px; 
-  border: none;
+  border: 3px solid rgb(97, 97, 97);
+  overflow: hidden;
 }
 
-.choice .card-body {
-  max-width: 100%;
-  overflow: hidden; /* Hide overflow text */
-  max-height: 100%;
-}
-
+/* Centers content and ensures it takes up full height */
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   justify-content: space-between; /* Align items with space between */
-  height: 100%; /* Ensure the card-body takes up the full height */
+  height: 300px; /* Ensure the card-body takes up the full height */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
 }
 
+/* Aligns and pads the flag */
 .card-flag {
   display: flex;
   align-items: flex-end;
@@ -69,6 +74,7 @@
   padding: 5px;
 }
 
+/* Centers flag content */
 .sq-flag {
   display: flex;
   justify-content: center; /* Horizontally center the content */
@@ -78,12 +84,14 @@
   padding: 0px;
 }
 
+/* Ensures the flag image fits within its container */
 .centered-flag {
   max-width: 100%; /* Ensure the flag image doesn't exceed its container's width */
   max-height: 100%; /* Ensure the flag image doesn't exceed its container's height */
   border-radius: 5px;
 }
 
+/* Sets image width and maintains aspect ratio */
 .card-body img {
   width: 35%; /* Set the width of the image */
   height: auto; /* Maintain the aspect ratio */
@@ -92,6 +100,7 @@
   border-radius: 5px;
 }
 
+/* Centers the title image */
 .card-title img {
   width: 45%; /* Set the width of the title image */
   height: auto; /* Maintain the aspect ratio */
@@ -101,52 +110,49 @@
   border-radius: 5px;
 }
 
+/* Ensures text wraps properly */
 .card-title,
 .card-text {
   max-width: 100%;
   word-wrap: break-word;
 }
 
+/* Styles the card header */
 .card-h4 {
   width: 100%;
-  height: 50%;
   font-weight: 100;
   font-family: 'Formula1-Regular', 'Formula1', sans-serif;
   color: white;
   font-size: 14px;
-  margin: 12px;
+  padding: 10px;
+  margin: 0;
 }
 
 .track-names {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 12px 8px 12px;
+  background-color: black;
 }
 
+/* Sets width and maintains aspect ratio of track name images */
 .track-names img {
   margin-bottom: 10px;
   width: 100%;
   height: auto;
 }
 
+/* Styles the footer */
 .footer {
   display: flex;
   flex-direction: column;
   background-color: black;
+  overflow: hidden;
   width: 100%;
+  height: auto;
   text-align: center;
-}
-
-.unset {
-  color: black !important;
-  background-color: #ddd !important;
-}
-
-.choice > .card-body {
-  height: calc(100% - 30px); /* Ensure card body fills the remaining height */
-}
-
-.choice.small {
-  width: 16%; /* Set the width of small cards */
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .choice.expand {
