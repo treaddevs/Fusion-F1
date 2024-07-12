@@ -26,6 +26,10 @@
   padding: 35px 20px 35px 20px;
 }
 
+.horizontal-accordion::webkit-scrollbar {
+  display: none;
+}
+
 /* Sets a fixed height and handles overflow */
 .horizontal-accordion {
   height: 372px;
@@ -35,7 +39,6 @@
   white-space: nowrap; /* Ensures accordion items stay on the same line */
 }
  
-
 /* Adjusts width and margin for the card */
 .choice {
   width: 300px; /* Sets initial width of cards */

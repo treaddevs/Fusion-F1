@@ -303,8 +303,8 @@
 
 #myList {
     position: absolute;
-    bottom: 16%;
     left: 50%; 
+    bottom: 16%;
     width: 80%; 
     max-height: 400px;
     overflow-y: auto;

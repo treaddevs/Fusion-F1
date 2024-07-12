@@ -1,6 +1,4 @@
-//alert("Working!");
-
-// Video Text Overlay //
+// Video Text Overlay
 function fadeOutText() {
     var svgText = document.querySelector('.video .highlights text tspan');
     svgText.classList.add("fadeOutAnimation");
@@ -13,24 +11,24 @@ function showSlides() {
     var i;
     var slides = document.getElementsByClassName("slide");
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000); 
 }
 
 function plusSlides(event, n) {
     showSlides(slideIndex += n);
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
 }
 
 $('#myCarousel').carousel({
-    interval:   4000
+    interval: 4000
 });
 
-// Driver Standings + API //
+// Driver Standings + API
 document.addEventListener('DOMContentLoaded', function () {
     const listItems = document.querySelectorAll('.list-group-item');
 
@@ -96,7 +94,7 @@ async function updatePointsForAllDrivers() {
 
         const firstNameElement = document.createElement('span');
         firstNameElement.classList.add('rankings-first-name');
-        
+
         const lastNameElement = document.createElement('span');
         lastNameElement.classList.add('rankings-last-name');
 
@@ -126,30 +124,30 @@ async function updatePointsForAllDrivers() {
 
         const pointsContainer = document.createElement('div');
         pointsContainer.classList.add('points-container');
-        pointsContainer.style.verticalAlign = 'center'; // Align vertically
+        pointsContainer.style.verticalAlign = 'center'; 
 
         const pointsElement = document.createElement('span');
         pointsElement.classList.add(`${driver.Driver.familyName.toLowerCase()}-points`, 'points');
-        pointsElement.style.verticalAlign = 'center'; // Align vertically
+        pointsElement.style.verticalAlign = 'center'; 
         pointsElement.textContent = `${points} PTS`;
 
         const chevronRightIcon = document.createElement('i');
         chevronRightIcon.classList.add('fas', 'fa-angle-right');
-        chevronRightIcon.style.verticalAlign = 'center'; // Align vertically
+        chevronRightIcon.style.verticalAlign = 'center'; 
 
         const chevronRightIcon2 = document.createElement('i');
         chevronRightIcon2.classList.add('icon', 'icon-chevron-right', 'f1-color--warmRed');
-        chevronRightIcon2.style.verticalAlign = 'center'; // Align vertically
+        chevronRightIcon2.style.verticalAlign = 'center'; 
 
         // Append elements to the list item with spaces
         nameElement.appendChild(rankElement);
-        nameElement.appendChild(document.createTextNode(' ')); // Add space between rank and color icon
-        nameElement.appendChild(teamColorIcon); // Add team color icon
-        nameElement.appendChild(document.createTextNode(' ')); // Add space between color icon and first name
+        nameElement.appendChild(document.createTextNode(' ')); 
+        nameElement.appendChild(teamColorIcon); 
+        nameElement.appendChild(document.createTextNode(' ')); 
         nameElement.appendChild(firstNameElement);
-        nameElement.appendChild(document.createTextNode(' ')); // Add space between first and last name
+        nameElement.appendChild(document.createTextNode(' ')); 
         nameElement.appendChild(lastNameElement);
-        nameElement.appendChild(document.createTextNode(' ')); // Add space between last name and team
+        nameElement.appendChild(document.createTextNode(' '));
         nameElement.appendChild(teamElement);
 
         pointsContainer.appendChild(pointsElement);
@@ -165,10 +163,9 @@ async function updatePointsForAllDrivers() {
 }
 
 // Call updatePointsForAllDrivers function initially and then at regular intervals for live updates
-updatePointsForAllDrivers(); // Initial update
-setInterval(updatePointsForAllDrivers, 60000); // Update every 60 seconds (adjust interval as needed)
+updatePointsForAllDrivers();
+setInterval(updatePointsForAllDrivers, 60000); // Update every 60 seconds
 
-// Function to get team color based on team name
 function getTeamColor(teamName) {
     switch (teamName) {
         case 'Red Bull':
@@ -196,7 +193,6 @@ function getTeamColor(teamName) {
     }
 }
 
-// Function to get the display name of the team
 function getTeamDisplayName(teamName) {
     switch (teamName) {
         case 'Red Bull':
@@ -229,7 +225,7 @@ async function populatePodiumFromAPI() {
         // Fetch driver standings data from the Ergast API
         const driverStandings = await fetchDriverStandings();
 
-        // Sort the drivers based on their points (assuming 'points' exists)
+        // Sort the drivers based on their points
         const sortedDrivers = driverStandings.sort((a, b) => b.points - a.points); // Descending order for most points
 
         // Check if there are at least 3 drivers
@@ -269,7 +265,6 @@ async function populatePodiumFromAPI() {
                     break;
             }
 
-            // Populate podium with driver data
             populatePodium({ driverImage, firstName, lastName, team, country, position });
 
             // Store driver data in podiumDrivers array
@@ -349,10 +344,9 @@ function populatePodium(driverData) {
     }
 }
 
-// Call the function to populate podium from the API
 populatePodiumFromAPI();
 
-// Race Schedule Accordion //
+// Race Schedule Accordion
 document.addEventListener('DOMContentLoaded', function () {
     function toggleAccordion() {
         const choiceArray = document.querySelectorAll(".choice");
@@ -372,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Tech Page 3D Carousel //
+// Tech Page 3D Carousel
 const carousel = document.querySelector('.carousel');
 const items = document.querySelectorAll('.item');
 const leftButton = document.querySelector('.button--left');
@@ -380,35 +374,35 @@ const rightButton = document.querySelector('.button--right');
 const itemCount = items.length;
 let currentPosition = 1;
 
-leftButton.addEventListener('click', function() {
-  roll('right');
+leftButton.addEventListener('click', function () {
+    roll('right');
 });
-rightButton.addEventListener('click', function() {
-  roll('left');
+rightButton.addEventListener('click', function () {
+    roll('left');
 });
 
 function roll(direction) {
-  carousel.classList.add(`moving-${direction}`);
-  
-  if (direction === 'right') {
-    currentPosition = currentPosition < itemCount ? currentPosition + 1 : 1;
-  } else if (direction === 'left') {
-    currentPosition = currentPosition > 1 ? currentPosition - 1 : itemCount;
-  }
+    carousel.classList.add(`moving-${direction}`);
 
-  for (let i = 0; i < itemCount; i++) {
-    const item = items[i];
-    let newPosition = currentPosition + i;
-    if (newPosition > itemCount) {
-      newPosition -= itemCount;
+    if (direction === 'right') {
+        currentPosition = currentPosition < itemCount ? currentPosition + 1 : 1;
+    } else if (direction === 'left') {
+        currentPosition = currentPosition > 1 ? currentPosition - 1 : itemCount;
     }
-    item.dataset.position = newPosition;
-  }
 
-  carousel.addEventListener("transitionend", function() {
-    carousel.classList.remove(`moving-${direction}`);
-  }, false);
+    for (let i = 0; i < itemCount; i++) {
+        const item = items[i];
+        let newPosition = currentPosition + i;
+        if (newPosition > itemCount) {
+            newPosition -= itemCount;
+        }
+        item.dataset.position = newPosition;
+    }
 
-  const activeItem = document.querySelector('.item[data-position="3"]');
-  console.log(activeItem);
+    carousel.addEventListener("transitionend", function () {
+        carousel.classList.remove(`moving-${direction}`);
+    }, false);
+
+    const activeItem = document.querySelector('.item[data-position="3"]');
+    console.log(activeItem);
 }

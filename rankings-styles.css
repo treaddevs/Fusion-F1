@@ -42,15 +42,15 @@
 
 .podium {
     position: absolute;
-    top: 50%; /* Adjust as needed */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; /* Adjust as needed */
-    max-width: 1030px; /* Maximum width */
-    max-height: 289px; /* Maximum height */
+    width: 90%;
+    max-width: 1030px;
+    max-height: 289px;
 }
 
 .podium-left, .podium-right {
@@ -59,8 +59,8 @@
     height: 120px; 
     display: flex;
     justify-content: center; 
-    border-top-left-radius: 10px; /* Rounded corners for top left */
-    border-top-right-radius: 10px; /* Rounded corners for top right */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
 }
 
 .podium-center {
@@ -68,8 +68,8 @@
     height: 150px; 
     display: flex; 
     justify-content: center; 
-    border-top-left-radius: 10px; /* Rounded corners for top left */
-    border-top-right-radius: 10px; /* Rounded corners for top right */
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
 }
 
 .podium-left .team-border {
@@ -184,13 +184,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start; 
 }
 
 .driver-left img,
 .driver-center img,
 .driver-right img {
-    align-self: flex-end; /* Position the driver image at the bottom */
+    align-self: flex-end;
 }
 
 .podium-left .driver-left {
@@ -233,15 +233,15 @@
     align-items: center;
     padding: 10px;
     border-radius: 5px;
-    color: black; /* Default text color */
-    background-color: white; /* Default background color */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition animation */
+    color: black; 
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .list-group-item:hover,
 .list-group-item:focus {
-    background-color: #212529; /* Background color on hover */
-    color: white !important; /* Text color on hover */
+    background-color: #212529; 
+    color: white !important; 
 }
 
 .list-group-item:hover .icon-chevron-right.f1-color--warmRed,
@@ -303,9 +303,9 @@
 
 #myList {
     position: absolute;
-    top: 115%;
-    left: 50%; /* Position from the horizontal center */
-    width: 80%; /* 80% of the viewport width */
+    top: 125%;
+    left: 50%; 
+    width: 80%;
     max-height: 400px;
     overflow-y: auto;
     transform: translate(-50%, -100%);
