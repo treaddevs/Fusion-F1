@@ -4,7 +4,7 @@
 
 Being the first website I built from the ground up my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netfix series Formula 1: Drive to Survive, I decided to start with F1 for its global influence, automotive innovation, acceptance of developers, asset/font availability, and presence of public APIs. While the current F1 site uses a CMS and connects to other apps, visually it contains ample margins and whitespace. I chose to use a dark theme because white text is easier to read and chose to embed interactive components.
 
-Technologies used:
+/*Technologies used*/:
 - HTML5
 - CSS
 - JavaScript
