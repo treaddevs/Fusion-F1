@@ -5,11 +5,11 @@
 Being the first website I built from the ground up my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netfix series Formula 1: Drive to Survive, I decided to start with F1 for its global influence, automotive innovation, acceptance of developers, asset/font availability, and presence of public APIs. While the current F1 site uses a CMS and connects to other apps, visually it contains ample margins and whitespace. I chose to use a dark theme because white text is easier to read and chose to embed interactive components.
 
 Technologies used:
-• HTML5
-• CSS
-• JavaScript
-• Bootstrap
-• Font Awesome UI
+- HTML5
+- CSS
+- JavaScript
+- Bootstrap
+- Font Awesome UI
 
 Project design: I learned the importance of choosing the layout, framework, and architecture of the project from the start. Being the foundation of future development, these decisions have echoes down the line. Choosing flexbox over grid for layout, and  important decisions in making our project modular, dynamic, and scalable. 
 
