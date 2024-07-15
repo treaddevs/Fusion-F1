@@ -51,8 +51,8 @@ body {
     top: 138px;
     left: 0;
     width: 100%;
-    height: 150%; /* Increase height to 150% */
-    overflow: hidden; /* Hide overflow */
+    height: 150%; 
+    overflow: hidden; 
     z-index: -1;
 }
 
@@ -62,18 +62,17 @@ body {
     left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure video covers the container */
-    transform: translateX(-50%); /* Center the video horizontally */
+    object-fit: cover; 
+    transform: translateX(-50%);
 }
 
-/* Styles for slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 100%; /* Ensure slideshow width matches video width */
-    margin-top: 10px; /* Adjust margin as needed */
+    max-width: 100%; 
+    margin-top: 10px; 
     margin-bottom: 20px;
     margin-left: 10px;
-    flex-basis: 100%; /* Ensure slideshow takes full width on all screen sizes */
+    flex-basis: 100%; 
     z-index: 1;
 }
 
@@ -83,12 +82,11 @@ body {
 
 .slide img {
     width: 100%;
-    height: 480px; /* Maintain aspect ratio */
-    max-width: 100%; /* Limit width to match video */
+    height: 480px; 
+    max-width: 100%; 
     border-radius: 15px;
 }
 
-/* Styles for navigation arrows */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -355,14 +353,14 @@ ul {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 0%; /* Initially set to 0% */
+    width: 0%; 
     height: 3px;
     background-color: currentColor;
     transition: width 0.3s ease; 
 }
 
 .teamname:hover::after {
-    width: 100%; /* Expand to 100% on hover */
+    width: 100%;
 }
 
 .nav-list.drivers .column {
@@ -565,7 +563,7 @@ a.video-text {
 }
 
 .article a, .article h3 {
-    position: relative; /* Ensure anchor and heading elements stay in position */
+    position: relative; 
 }
 
 .article h3 {
@@ -716,7 +714,6 @@ a.video-text {
     }
 }
 
-/* Media queries for smaller screens */
 @media screen and (max-width: 1025px) {
     .content-container {
         flex-direction: column;
@@ -744,13 +741,11 @@ a.video-text {
 }
 
 @media screen and (max-width: 1035px) {
-    /* Adjusts the layout to stack the slideshow and driver-standings vertically */
     .container {
         flex-direction: column; 
         align-items: center; 
     }
 
-    /* Adjusts the width of the slideshow and driver-standings to occupy full width */
     .slideshow-container {
         width: 100%; 
         max-width: 100%;

@@ -1,4 +1,3 @@
-/* Ensures the image fits within the container */
 .schedule img {
   max-width: 100%;
   width: auto;
@@ -13,7 +12,6 @@
   z-index: -1; 
 }
 
-/* Sets a fixed height and handles overflow */
 .race-schedule {
   position: relative;
   width: 100%;
@@ -21,6 +19,7 @@
   overflow: hidden; 
   margin: 15px 0; 
   display: flex; 
+  flex-direction: row;
   justify-content: center; 
   align-items: center; 
   padding: 35px 20px 35px 20px;
@@ -30,46 +29,41 @@
   display: none;
 }
 
-/* Sets a fixed height and handles overflow */
 .horizontal-accordion {
   height: 372px;
   display: flex;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  overflow-y: hidden; /* Hides vertical overflow */
-  white-space: nowrap; /* Ensures accordion items stay on the same line */
-}
- 
-/* Adjusts width and margin for the card */
-.choice {
-  width: 300px; /* Sets initial width of cards */
-  flex: 0 0 auto; /* Prevent cards from shrinking */
-  margin: 0 10px; /* Adds spacing between cards */
-  transition: width 0.3s; /* Add transition effect for width change */
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: nowrap; 
 }
 
-/* Ensures background image covers the entire card and smooth background color change */
+.choice {
+  width: 300px; 
+  flex: 0 0 auto; 
+  margin: 0 10px; 
+  transition: width 0.3s; 
+}
+
 .card {
   background-color: transparent; 
-  background-size: cover; /* Ensures the background image covers the entire card */
-  transition: background-color 0.3s ease; /* Adds transition effect to smoothly change the background color */
+  background-size: cover; 
+  transition: background-color 0.3s ease; 
   border-radius: 10px; 
   border: 3px solid rgb(97, 97, 97);
   overflow: hidden;
 }
 
-/* Centers content and ensures it takes up full height */
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: space-between; /* Align items with space between */
-  height: 300px; /* Ensure the card-body takes up the full height */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center; 
+  align-items: center; 
+  justify-content: space-between; 
+  height: 300px; 
+  justify-content: center; 
+  align-items: center; 
 }
 
-/* Aligns and pads the flag */
 .card-flag {
   display: flex;
   align-items: flex-end;
@@ -77,57 +71,51 @@
   padding: 5px;
 }
 
-/* Centers flag content */
 .sq-flag {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
   width: 100px;
   height: 50px;
   padding: 0px;
 }
 
-/* Ensures the flag image fits within its container */
 .centered-flag {
-  max-width: 100%; /* Ensure the flag image doesn't exceed its container's width */
-  max-height: 100%; /* Ensure the flag image doesn't exceed its container's height */
+  max-width: 100%; 
+  max-height: 100%; 
   border-radius: 5px;
 }
 
-/* Sets image width and maintains aspect ratio */
 .card-body img {
-  width: 35%; /* Set the width of the image */
-  height: auto; /* Maintain the aspect ratio */
+  width: 35%; 
+  height: auto; 
   background-color: black;
   padding: 3px;
   border-radius: 5px;
 }
 
-/* Centers the title image */
 .card-title img {
-  width: 45%; /* Set the width of the title image */
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Ensure the image behaves as a block element */
-  margin: 0 auto; /* Center the image horizontally */
+  width: 45%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
   padding: 3px;
   border-radius: 5px;
 }
 
-/* Ensures text wraps properly */
 .card-title,
 .card-text {
   max-width: 100%;
   word-wrap: break-word;
 }
 
-/* Styles the card header */
 .card-h4 {
   width: 100%;
   font-weight: 100;
   font-family: 'Formula1-Regular', 'Formula1', sans-serif;
   color: white;
   font-size: 14px;
-  padding: 10px;
+  padding: 6px;
   margin: 0;
 }
 
@@ -136,21 +124,19 @@
   background-color: black;
 }
 
-/* Sets width and maintains aspect ratio of track name images */
 .track-names img {
   margin-bottom: 10px;
   width: 100%;
   height: auto;
 }
 
-/* Styles the footer */
 .footer {
   display: flex;
   flex-direction: column;
   background-color: black;
   overflow: hidden;
   width: 100%;
-  height: auto;
+  height: 80px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -159,5 +145,5 @@
 }
 
 .choice.expand {
-  width: 550px; /* Set the width of expanded cards */
+  width: 550px; 
 }
