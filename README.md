@@ -20,6 +20,8 @@ The project includes interactive components such as the race schedule accordion 
 
 Project design: I learned the importance of choosing the layout, framework, and architecture of the project from the start. Being the foundation of future development, these decisions have echoes down the line. Choosing flexbox over grid for the layout was important for making the project dynamic, responsive, and scalable.
 
+![Screenshot 2024-07-15 at 11 52 12 PM](https://github.com/user-attachments/assets/b1d3656f-a338-48a0-b906-24436835c0dc)
+
 ### APIs, Assets, Fonts
 - [F1 Ergast Developer API](http://ergast.com/mrd/) (this API is being deprecated at the end of the 2024 season)
 - [https://openf1.org/](https://openf1.org/) (separate API that could be implemented)
