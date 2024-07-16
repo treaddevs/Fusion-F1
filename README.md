@@ -17,10 +17,10 @@ Project design: I learned the importance of choosing the layout, framework, and 
 
 ### APIs, Assets, Fonts
 - [F1 Ergast Developer API](http://ergast.com/mrd/) (this API is being deprecated at the end of the 2024 season)
-- [https://openf1.org/](https://openf1.org/)
+- [https://openf1.org/](https://openf1.org/) (separate API that could be implemented)
 - [F1 Assets](f1assets.com)
 - [F1 Fonts](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
  
-I consider this a work in progress, and plan to continue to play around with responsiveness
+I consider this project a work in progress, and plan to continue to play around with responsiveness
 
 
