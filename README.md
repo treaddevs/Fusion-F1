@@ -13,13 +13,13 @@ Being the first website I built from the ground up my goal was to reimagine and 
 
 Project design: I learned the importance of choosing the layout, framework, and architecture of the project from the start. Being the foundation of future development, these decisions have echoes down the line. Choosing flexbox over grid for layout, and  important decisions in making our project modular, dynamic, and scalable. 
 
+![Screenshot 2024-03-27 at 1 49 40 PM](https://github.com/user-attachments/assets/bb2a8848-010e-4d10-9cbe-08495b89fb34)
+
 ### APIs, Assets, Fonts
 - [F1 Ergast Developer API](http://ergast.com/mrd/) (this API is being deprecated at the end of the 2024 season)
 - [https://openf1.org/](https://openf1.org/)
 - [F1 Assets](f1assets.com)
 - [F1 Fonts](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
-
-![Screenshot 2024-03-27 at 1 49 40 PM](https://github.com/user-attachments/assets/bb2a8848-010e-4d10-9cbe-08495b89fb34)
  
 I consider this a work in progress, and plan to continue to play around with responsiveness
 
