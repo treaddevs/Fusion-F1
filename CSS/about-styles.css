@@ -1,0 +1,15 @@
+.container {
+    margin: 20px 40px;
+}
+
+.container a {
+    color: rgb(0, 191, 255);
+}
+
+.container h1, 
+.container h2,
+.container p,
+.container li {
+    font-family: 'Montserrat';
+    color: white;
+}
