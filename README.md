@@ -2,9 +2,9 @@
 
 ## About the Project
 
-Being the first website I built from the ground up my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netfix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability, and presence of public APIs. While the current F1 site uses a CMS and connects several other apps (mobile, live timing), visually it contains ample margins and whitespace. 
+Being the first website I built from the ground up my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netfix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability, and presence of public APIs.
 
-I decided to use a dark theme because white text is easier to read and chose to embed engaging components. I also used motion and color in the background color splash theme since F1 is flashy and explosive. Colors were also coordinated in the navbar where the text for each driver's name matches their team color, as well as the date elements connected to the timeline on the teams pages.
+I decided to use a dark theme because white text is easier to read on a dark background and chose to embed engaging components. I also used motion and color in the background color splash theme since F1 is flashy and explosive. Colors were also coordinated in the navbar where the text for each driver's name matches their team color, as well as the date elements connected to the timeline on the teams pages.
 
 The project includes interactive components such as the race schedule accordion with cards, shuffling concept car carousel, 3D Sketchfab model iframe embed, hover effects, and more.
 
@@ -19,8 +19,6 @@ The project includes interactive components such as the race schedule accordion 
 - Sketch
 
 Project design: I learned the importance of choosing the layout, framework, and architecture of the project from the start. Being the foundation of future development, these decisions have echoes down the line. Choosing flexbox over grid for the layout was important for making the project dynamic, responsive, and scalable.
-
-![Screenshot 2024-07-15 at 11 52 12 PM](https://github.com/user-attachments/assets/b1d3656f-a338-48a0-b906-24436835c0dc)
 
 ### APIs, Assets, Fonts
 - [F1 Ergast Developer API](http://ergast.com/mrd/) (this API is being deprecated at the end of the 2024 season)
