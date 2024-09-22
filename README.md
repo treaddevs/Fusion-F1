@@ -2,7 +2,7 @@
 
 ## About the Project
 
-Being the first website I built from the ground up my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netfix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability, and presence of public APIs.
+Being the first website I built from the ground up my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netflix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability, and presence of public APIs.
 
 I decided to use a dark theme because white text is easier to read on a dark background and chose to embed engaging components. I also used motion and color in the background color splash theme since F1 is flashy and explosive. Colors were also coordinated in the navbar where the text for each driver's name matches their team color, as well as the date elements connected to the timeline on the teams pages.
 
