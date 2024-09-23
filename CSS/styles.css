@@ -216,6 +216,7 @@ header img {
 }
 
 .nav-header a {
+    display: inline-flex;
     font-family: 'Formula1-Regular', 'Formula1', sans-serif;
     color: white;
     text-decoration: none;
@@ -225,7 +226,7 @@ header img {
 
 .nav-header a:hover::after {
     content: '';
-    width: 100%;
+    width: 80%;
     position: absolute;
     bottom: -7px;
     left: 0;
