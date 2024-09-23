@@ -404,7 +404,7 @@ export const drivers = [
 export const teamData = [
   {
     id: 1,
-    logo: "../Teams/Alpine/Alpine.avif",
+    logo: "/Fusion-F1/Teams/Alpine/Alpine.avif",
     team: "Alpine",
     teamName: "BWT Alpine F1 Team",
     color: "#2293D1",
@@ -429,7 +429,7 @@ export const teamData = [
   },
   {
     id: 2,
-    logo: "../Teams/AstonMartin/AstonMartinLogo.png",
+    logo: "/Fusion-F1/Teams/AstonMartin/AstonMartinLogo.png",
     team: "Aston Martin",
     teamName: "Aston Martin Aramco F1 Team",
     color: "#358C75",
@@ -454,7 +454,7 @@ export const teamData = [
   },
   {
     id: 3,
-    logo: "../Teams/Ferrari/Ferarri.avif",
+    logo: "/Fusion-F1/Teams/Ferrari/Ferarri.avif",
     team: "Ferrari",
     teamName: "Scuderia Ferrari",
     color: "#F91536",
@@ -479,7 +479,7 @@ export const teamData = [
   },
   {
     id: 4,
-    logo: "../Teams/Haas/Haas.avif",
+    logo: "/Fusion-F1/Teams/Haas/Haas.avif",
     team: "Haas",
     teamName: "MoneyGram Haas F1 Team",
     color: "#B6BABD",
@@ -504,7 +504,7 @@ export const teamData = [
   },
   {
     id: 5,
-    logo: "../Teams/KickSauber/KickSauber.avif",
+    logo: "/Fusion-F1/Teams/KickSauber/KickSauber.avif",
     team: "Kick Sauber",
     teamName: "Stake F1 Team Kick Sauber",
     color: "#00E701",
@@ -529,7 +529,7 @@ export const teamData = [
   },
   {
     id: 6,
-    logo: "../Teams/McLaren/McLaren.avif",
+    logo: "/Fusion-F1/Teams/McLaren/McLaren.avif",
     team: "McLaren",
     teamName: "McLaren Formula 1 Team",
     color: "#F58020",
@@ -554,7 +554,7 @@ export const teamData = [
   },
   {
     id: 7,
-    logo: "../Teams/Mercedes/MercedesAMG.avif",
+    logo: "/Fusion-F1/Teams/Mercedes/MercedesAMG.avif",
     team: "Mercedes",
     teamName: "Mercedes-AMG PETRONAS F1 Team",
     color: "#6CD3BF",
@@ -579,7 +579,7 @@ export const teamData = [
   },
   {
     id: 8,
-    logo: "../Teams/RB/RBLogo2.png",
+    logo: "/Fusion-F1/Teams/RB/RBLogo2.png",
     team: "RB",
     teamName: "Visa Cash App RB Formula One Team",
     color: "#5E8FAA",
@@ -604,7 +604,7 @@ export const teamData = [
   },
   {
     id: 9,
-    logo: "../Teams/RedBull/RedBullRacing.avif",
+    logo: "/Fusion-F1/Teams/RedBull/RedBullRacing.avif",
     team: "Red Bull Racing",
     teamName: "Oracle Red Bull Racing",
     color: "#3671C6",
@@ -629,7 +629,7 @@ export const teamData = [
   },
   {
     id: 10,
-    logo: "../Teams/Williams/WilliamsRacing.avif",
+    logo: "/Fusion-F1/Teams/Williams/WilliamsRacing.avif",
     team: "Williams",
     teamName: "Williams Racing",
     color: "#37BEDD",
