@@ -43,7 +43,7 @@ function displayTeam(team) {
             <div class="team-body">
                 <div class="drivers-info">
                     <!-- Left driver -->
-                    <div class="left-driver driver-link" onclick="window.location='/driver.html?id=${teamDrivers[0].id}'">
+                    <div class="left-driver driver-link" onclick="window.location='/Fusion-F1/driver.html?id=${teamDrivers[0].id}'">
                         <div class="driver-pic" style="background-image: url(${teamDrivers[0].pic})"></div>
                         <div class="number-flag">
                             <h2 class="driver-number">${teamDrivers[0].number}</h2>
@@ -57,7 +57,7 @@ function displayTeam(team) {
                         </div>
                     </div>
                     <!-- Right driver -->
-                    <div class="right-driver driver-link" onclick="window.location='/driver.html?id=${teamDrivers[1].id}'">
+                    <div class="right-driver driver-link" onclick="window.location='/Fusion-F1/driver.html?id=${teamDrivers[1].id}'">
                         <div class="driver-pic" style="background-image: url(${teamDrivers[1].pic})"></div>
                         <div class="number-flag">
                             <h2 class="driver-number">${teamDrivers[1].number}</h2>

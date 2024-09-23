@@ -27,7 +27,7 @@ async function displayTeams() {
                 <div class="team-body">
                     <div class="drivers-info">
                         <!-- Left driver -->
-                        <div class="left-driver driver-link" onclick="window.location='/driver.html?id=${driver[0].id}'">
+                        <div class="left-driver driver-link" onclick="window.location='/Fusion-F1/driver.html?id=${driver[0].id}'">
                             <!-- Driver picture -->
                             <div class="driver-pic" style="background-image: url(${driver[0].pic})"></div>
                             <!-- Driver number and flag -->
@@ -45,7 +45,7 @@ async function displayTeams() {
                             </div>
                         </div>
                         <!-- Right driver -->
-                        <div class="right-driver driver-link" onclick="window.location='/driver.html?id=${driver[1].id}'">
+                        <div class="right-driver driver-link" onclick="window.location='/Fusion-F1/driver.html?id=${driver[1].id}'">
                             <!-- Driver picture -->
                             <div class="driver-pic" style="background-image: url(${driver[1].pic})"></div>
                             <!-- Driver number and flag -->
