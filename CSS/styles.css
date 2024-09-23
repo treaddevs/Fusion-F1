@@ -234,11 +234,11 @@ header img {
     background: #e10600; 
 }
 
-.fa-angle-right {
+/* .fa-angle-right {
     color: white;
-}
+} */
 
-.next .fa-angle-right {
+.next {
     color: white;
 }
 

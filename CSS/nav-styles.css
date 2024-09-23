@@ -156,7 +156,7 @@ header img {
 
 .nav-header a:hover::after {
     content: '';
-    width: 80%;
+    width: 100%;
     position: absolute;
     bottom: -7px;
     left: 0;
