@@ -2,7 +2,9 @@
 
 ## About the Project
 
-Being the first website I built using vanilla code, my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netflix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability. As well as the presence of publically available APIs. Colors are coordinated in the navbar for drivers to match their team color, as well as the date elements connected to the timeline on the teams pages.
+Being the first website I built using vanilla code, my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netflix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability. 
+
+Colors are coordinated in the navbar for drivers to match their team color, as well as the date elements connected to the timeline on the teams pages.
 
 The project includes interactive components such as: the race schedule accordion with cards, shuffling concept car carousel, 3D Sketchfab model iframe embed, hover effects, and more.
 
@@ -24,4 +26,6 @@ Project design: I learned the importance of choosing the layout, framework, and 
 - [F1 Assets](f1assets.com)
 - [F1 Fonts](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
 
-```npx serve```
+Use the *live preview* extension if using VSCode. 
+
+Or, host via node using ```npx serve``` to run the program on ```localhost:3000```
