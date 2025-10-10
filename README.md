@@ -4,8 +4,6 @@
 
 Being the first website I built using vanilla code, my goal was to reimagine and redesign an existing brand's website. Captivated by the intensity of the Netflix series *Formula 1: Drive to Survive*, I decided to start with F1 for its global influence, international innovation, acceptance of use for educational purposes, asset/font availability. 
 
-Colors are coordinated in the navbar for drivers to match their team color, as well as the date elements connected to the timeline on the teams pages.
-
 The project includes interactive components such as: the race schedule accordion with cards, shuffling concept car carousel, 3D Sketchfab model iframe embed, hover effects, and more.
 
 ![Screenshot 2024-03-27 at 1 49 40 PM](https://github.com/user-attachments/assets/bb2a8848-010e-4d10-9cbe-08495b89fb34)
@@ -17,6 +15,8 @@ The project includes interactive components such as: the race schedule accordion
 - Bootstrap
 - Font Awesome
 - Sketch
+
+Colors are coordinated in the navbar for drivers to match their team color, as well as the date elements connected to the timeline on the teams pages.
 
 Project design: I learned the importance of choosing the layout, framework, and architecture of the project from the start. Being the foundation of future development, these decisions have echoes down the line. Choosing flexbox over grid for the layout was important for making the project dynamic, responsive, and scalable.
 
